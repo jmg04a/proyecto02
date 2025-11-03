@@ -122,6 +122,30 @@
     <Compile Include="formularios\mostrartablas\frmDatosFacturasDetalles.Designer.cs">
       <DependentUpon>frmDatosFacturasDetalles.cs</DependentUpon>
     </Compile>
+    <Compile Include="formularios\mostrartablas\frmDatosProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\mostrartablas\frmDatosProductos.Designer.cs">
+      <DependentUpon>frmDatosProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\mostrartablas\frmDatosProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\mostrartablas\frmDatosProveedores.Designer.cs">
+      <DependentUpon>frmDatosProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\mostrartablas\frmDatosVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\mostrartablas\frmDatosVentas.Designer.cs">
+      <DependentUpon>frmDatosVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\mostrartablas\frmDatosVentasProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\mostrartablas\frmDatosVentasProductos.Designer.cs">
+      <DependentUpon>frmDatosVentasProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +225,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formularios\mostrartablas\frmDatosFacturasDetalles.resx">
       <DependentUpon>frmDatosFacturasDetalles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\mostrartablas\frmDatosProductos.resx">
+      <DependentUpon>frmDatosProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\mostrartablas\frmDatosProveedores.resx">
+      <DependentUpon>frmDatosProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\mostrartablas\frmDatosVentas.resx">
+      <DependentUpon>frmDatosVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\mostrartablas\frmDatosVentasProductos.resx">
+      <DependentUpon>frmDatosVentasProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>

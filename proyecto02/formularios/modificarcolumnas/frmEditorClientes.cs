@@ -13,7 +13,7 @@ namespace Proyecto2
 {
     public partial class frmEditorClientes : Form
     {
-        int id;
+        int id=-1;
         public frmEditorClientes()
         {
             InitializeComponent();
@@ -25,7 +25,6 @@ namespace Proyecto2
             InitializeComponent(); 
             Datos data = new Datos();
             DataSet ds = data.getAllData("SELECT * FROM clientes WHERE id=" + idEditar);
-            txtId.Text = ds.Tables[0].Rows[0]["id"].ToString();
             txtNombre.Text = ds.Tables[0].Rows[0]["nombre"].ToString();
             txtApellido.Text = ds.Tables[0].Rows[0]["apellido"].ToString();
             txtTipoDocumento.Text = ds.Tables[0].Rows[0]["tipo_doc"].ToString();
@@ -34,7 +33,6 @@ namespace Proyecto2
             txtNumeroTelefono2.Text = ds.Tables[0].Rows[0]["nro_tel_sec"].ToString();
             txtEmail.Text = ds.Tables[0].Rows[0]["email"].ToString();
             id = idEditar;
-            txtId.Text = id.ToString();
         }
 
         private void frmEditorClientes_Load(object sender, EventArgs e)
@@ -94,13 +92,13 @@ namespace Proyecto2
             else
             {
                 resultado = data.ExecuteQuery(
-                    "UPDATE agenda SET nombre='" + txtNombre.Text +
+                    "UPDATE clientes SET nombre='" + txtNombre.Text +
                     "',apellido= '" + txtApellido.Text +
                     "',tipo_doc= '" + txtTipoDocumento.Text +
                     "',nro_doc= '" + txtNumeroDocumento.Text +
                     "',nro_tel_princ= '" + txtNumeroTelefono.Text +
                     "',nro_tel_sec= '" + txtNumeroTelefono2.Text +
-                    "',email= '" + txtEmail.Text + "';"
+                    "',email= '" + txtEmail.Text + "' WHERE id ="+id+";"
                     );
                 if (resultado)
                 {

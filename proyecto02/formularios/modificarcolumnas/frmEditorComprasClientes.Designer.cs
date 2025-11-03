@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtTipoDocumento = new System.Windows.Forms.TextBox();
-            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtIdCliente = new System.Windows.Forms.TextBox();
+            this.txtIdVenta = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -54,6 +54,7 @@
             this.button2.TabIndex = 34;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -63,20 +64,21 @@
             this.button1.TabIndex = 33;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtTipoDocumento
+            // txtIdCliente
             // 
-            this.txtTipoDocumento.Location = new System.Drawing.Point(410, 150);
-            this.txtTipoDocumento.Name = "txtTipoDocumento";
-            this.txtTipoDocumento.Size = new System.Drawing.Size(242, 26);
-            this.txtTipoDocumento.TabIndex = 27;
+            this.txtIdCliente.Location = new System.Drawing.Point(410, 150);
+            this.txtIdCliente.Name = "txtIdCliente";
+            this.txtIdCliente.Size = new System.Drawing.Size(242, 26);
+            this.txtIdCliente.TabIndex = 27;
             // 
-            // txtApellido
+            // txtIdVenta
             // 
-            this.txtApellido.Location = new System.Drawing.Point(410, 123);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(242, 26);
-            this.txtApellido.TabIndex = 26;
+            this.txtIdVenta.Location = new System.Drawing.Point(410, 123);
+            this.txtIdVenta.Name = "txtIdVenta";
+            this.txtIdVenta.Size = new System.Drawing.Size(242, 26);
+            this.txtIdVenta.TabIndex = 26;
             // 
             // label4
             // 
@@ -104,12 +106,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtTipoDocumento);
-            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtIdCliente);
+            this.Controls.Add(this.txtIdVenta);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Name = "frmEditorComprasClientes";
             this.Text = "Compras clientes";
+            this.Load += new System.EventHandler(this.frmEditorComprasClientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,8 +123,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtTipoDocumento;
-        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtIdCliente;
+        private System.Windows.Forms.TextBox txtIdVenta;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
     }

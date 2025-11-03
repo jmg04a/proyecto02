@@ -174,7 +174,7 @@ namespace Proyecto2
                 string r = dgvDatos[0,
                     dgvDatos.CurrentCell.RowIndex].Value.ToString();
                 if (MessageBox.Show("Deseas Eliminar el Registro", "Sistema",
-                    MessageBoxButtons.OK, MessageBoxIcon.Question) == DialogResult.OK)
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     bool s = datos.ExecuteQuery("DELETE FROM clientes WHERE id=" + r);
                     if (s)

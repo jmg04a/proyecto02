@@ -82,7 +82,7 @@
             this.toolStripEditar,
             this.toolStripEliminar});
             this.cmsDatos.Name = "contextMenuStrip1";
-            this.cmsDatos.Size = new System.Drawing.Size(147, 68);
+            this.cmsDatos.Size = new System.Drawing.Size(241, 101);
             // 
             // toolStripEditar
             // 
@@ -288,7 +288,7 @@
             // tsmPC
             // 
             this.tsmPC.Name = "tsmPC";
-            this.tsmPC.Size = new System.Drawing.Size(243, 34);
+            this.tsmPC.Size = new System.Drawing.Size(270, 34);
             this.tsmPC.Text = "Probar conexion";
             this.tsmPC.Click += new System.EventHandler(this.tsmPC_Click);
             // 

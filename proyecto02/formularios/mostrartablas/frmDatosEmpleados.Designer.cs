@@ -57,16 +57,18 @@
             this.toolStripEditar = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsDatos = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.dgvDatos = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCuil = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCargo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtAntiguedad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtSalarioAnual = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtFechaIngreso = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.msMenu.SuspendLayout();
             this.cmsDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
@@ -77,6 +79,7 @@
             this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
             this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(75, 29);
             this.cerrarToolStripMenuItem.Text = "Cerrar";
+            this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
             // 
             // tsmConexion
             // 
@@ -85,24 +88,28 @@
             this.tsmConexion.Name = "tsmConexion";
             this.tsmConexion.Size = new System.Drawing.Size(102, 29);
             this.tsmConexion.Text = "Conexion";
+            this.tsmConexion.Click += new System.EventHandler(this.tsmConexion_Click);
             // 
             // tsmPC
             // 
             this.tsmPC.Name = "tsmPC";
             this.tsmPC.Size = new System.Drawing.Size(243, 34);
             this.tsmPC.Text = "Probar conexion";
+            this.tsmPC.Click += new System.EventHandler(this.tsmPC_Click);
             // 
             // tsmReiniciar
             // 
             this.tsmReiniciar.Name = "tsmReiniciar";
             this.tsmReiniciar.Size = new System.Drawing.Size(92, 29);
             this.tsmReiniciar.Text = "Reiniciar";
+            this.tsmReiniciar.Click += new System.EventHandler(this.tsmReiniciar_Click);
             // 
             // tslAgregarForm
             // 
             this.tslAgregarForm.Name = "tslAgregarForm";
             this.tslAgregarForm.Size = new System.Drawing.Size(171, 29);
             this.tslAgregarForm.Text = "Agregar Elemento";
+            this.tslAgregarForm.Click += new System.EventHandler(this.tslAgregarForm_Click);
             // 
             // msMenu
             // 
@@ -115,7 +122,7 @@
             this.cerrarToolStripMenuItem});
             this.msMenu.Location = new System.Drawing.Point(0, 0);
             this.msMenu.Name = "msMenu";
-            this.msMenu.Size = new System.Drawing.Size(1761, 36);
+            this.msMenu.Size = new System.Drawing.Size(1761, 33);
             this.msMenu.TabIndex = 61;
             this.msMenu.Text = "menuStrip1";
             // 
@@ -130,7 +137,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(12, 620);
+            this.txtEmail.Location = new System.Drawing.Point(14, 660);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(497, 26);
             this.txtEmail.TabIndex = 60;
@@ -146,7 +153,7 @@
             // 
             // txtNumeroTelefono2
             // 
-            this.txtNumeroTelefono2.Location = new System.Drawing.Point(12, 562);
+            this.txtNumeroTelefono2.Location = new System.Drawing.Point(14, 602);
             this.txtNumeroTelefono2.Name = "txtNumeroTelefono2";
             this.txtNumeroTelefono2.Size = new System.Drawing.Size(497, 26);
             this.txtNumeroTelefono2.TabIndex = 58;
@@ -154,7 +161,7 @@
             // lblNroTel2
             // 
             this.lblNroTel2.AutoSize = true;
-            this.lblNroTel2.Location = new System.Drawing.Point(8, 539);
+            this.lblNroTel2.Location = new System.Drawing.Point(10, 579);
             this.lblNroTel2.Name = "lblNroTel2";
             this.lblNroTel2.Size = new System.Drawing.Size(245, 20);
             this.lblNroTel2.TabIndex = 57;
@@ -162,7 +169,7 @@
             // 
             // txtNumeroTelefono
             // 
-            this.txtNumeroTelefono.Location = new System.Drawing.Point(10, 501);
+            this.txtNumeroTelefono.Location = new System.Drawing.Point(12, 541);
             this.txtNumeroTelefono.Name = "txtNumeroTelefono";
             this.txtNumeroTelefono.Size = new System.Drawing.Size(497, 26);
             this.txtNumeroTelefono.TabIndex = 56;
@@ -170,7 +177,7 @@
             // lblNroTel
             // 
             this.lblNroTel.AutoSize = true;
-            this.lblNroTel.Location = new System.Drawing.Point(8, 467);
+            this.lblNroTel.Location = new System.Drawing.Point(10, 507);
             this.lblNroTel.Name = "lblNroTel";
             this.lblNroTel.Size = new System.Drawing.Size(153, 20);
             this.lblNroTel.TabIndex = 55;
@@ -249,12 +256,13 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(12, 889);
+            this.btnBuscar.Location = new System.Drawing.Point(14, 948);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(497, 99);
             this.btnBuscar.TabIndex = 45;
             this.btnBuscar.Text = "Buscar en la tabla";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // lblId
             // 
@@ -268,14 +276,16 @@
             // toolStripEliminar
             // 
             this.toolStripEliminar.Name = "toolStripEliminar";
-            this.toolStripEliminar.Size = new System.Drawing.Size(146, 32);
+            this.toolStripEliminar.Size = new System.Drawing.Size(240, 32);
             this.toolStripEliminar.Text = "Eliminar";
+            this.toolStripEliminar.Click += new System.EventHandler(this.toolStripEliminar_Click);
             // 
             // toolStripEditar
             // 
             this.toolStripEditar.Name = "toolStripEditar";
-            this.toolStripEditar.Size = new System.Drawing.Size(146, 32);
+            this.toolStripEditar.Size = new System.Drawing.Size(240, 32);
             this.toolStripEditar.Text = "Editar";
+            this.toolStripEditar.Click += new System.EventHandler(this.toolStripEditar_Click);
             // 
             // cmsDatos
             // 
@@ -284,7 +294,7 @@
             this.toolStripEditar,
             this.toolStripEliminar});
             this.cmsDatos.Name = "contextMenuStrip1";
-            this.cmsDatos.Size = new System.Drawing.Size(147, 68);
+            this.cmsDatos.Size = new System.Drawing.Size(241, 101);
             // 
             // dgvDatos
             // 
@@ -298,12 +308,12 @@
             this.dgvDatos.Size = new System.Drawing.Size(1217, 940);
             this.dgvDatos.TabIndex = 42;
             // 
-            // textBox1
+            // txtCuil
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 429);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(497, 26);
-            this.textBox1.TabIndex = 63;
+            this.txtCuil.Location = new System.Drawing.Point(12, 429);
+            this.txtCuil.Name = "txtCuil";
+            this.txtCuil.Size = new System.Drawing.Size(497, 26);
+            this.txtCuil.TabIndex = 63;
             // 
             // label1
             // 
@@ -314,84 +324,102 @@
             this.label1.TabIndex = 62;
             this.label1.Text = "Cuil";
             // 
-            // textBox2
+            // txtCargo
             // 
-            this.textBox2.Location = new System.Drawing.Point(16, 686);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(497, 26);
-            this.textBox2.TabIndex = 65;
+            this.txtCargo.Location = new System.Drawing.Point(18, 726);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(497, 26);
+            this.txtCargo.TabIndex = 65;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 663);
+            this.label2.Location = new System.Drawing.Point(14, 703);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 20);
             this.label2.TabIndex = 64;
             this.label2.Text = "Cargo";
             // 
-            // textBox3
+            // txtAntiguedad
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 748);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(497, 26);
-            this.textBox3.TabIndex = 67;
+            this.txtAntiguedad.Location = new System.Drawing.Point(14, 788);
+            this.txtAntiguedad.Name = "txtAntiguedad";
+            this.txtAntiguedad.Size = new System.Drawing.Size(497, 26);
+            this.txtAntiguedad.TabIndex = 67;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 725);
+            this.label3.Location = new System.Drawing.Point(10, 765);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 20);
             this.label3.TabIndex = 66;
             this.label3.Text = "Antiguedad";
             // 
-            // textBox4
+            // txtSalarioAnual
             // 
-            this.textBox4.Location = new System.Drawing.Point(16, 857);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(497, 26);
-            this.textBox4.TabIndex = 71;
+            this.txtSalarioAnual.Location = new System.Drawing.Point(18, 897);
+            this.txtSalarioAnual.Name = "txtSalarioAnual";
+            this.txtSalarioAnual.Size = new System.Drawing.Size(497, 26);
+            this.txtSalarioAnual.TabIndex = 71;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 834);
+            this.label4.Location = new System.Drawing.Point(8, 874);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 20);
             this.label4.TabIndex = 70;
             this.label4.Text = "Salario anual";
             // 
-            // textBox5
+            // txtFechaIngreso
             // 
-            this.textBox5.Location = new System.Drawing.Point(10, 805);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(497, 26);
-            this.textBox5.TabIndex = 69;
+            this.txtFechaIngreso.Location = new System.Drawing.Point(12, 845);
+            this.txtFechaIngreso.Name = "txtFechaIngreso";
+            this.txtFechaIngreso.Size = new System.Drawing.Size(497, 26);
+            this.txtFechaIngreso.TabIndex = 69;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 777);
+            this.label5.Location = new System.Drawing.Point(10, 817);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 20);
             this.label5.TabIndex = 68;
             this.label5.Text = "Fecha ingreso";
             // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Location = new System.Drawing.Point(18, 478);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(497, 26);
+            this.txtDireccion.TabIndex = 73;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(14, 455);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 20);
+            this.label6.TabIndex = 72;
+            this.label6.Text = "Direccion";
+            // 
             // frmDatosEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1761, 1010);
-            this.Controls.Add(this.textBox4);
+            this.ClientSize = new System.Drawing.Size(1761, 1043);
+            this.Controls.Add(this.txtDireccion);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtSalarioAnual);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtFechaIngreso);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtAntiguedad);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCargo);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCuil);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.msMenu);
             this.Controls.Add(this.lbTitulo);
@@ -455,15 +483,17 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripEditar;
         private System.Windows.Forms.ContextMenuStrip cmsDatos;
         private System.Windows.Forms.DataGridView dgvDatos;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCuil;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtAntiguedad;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtSalarioAnual;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtFechaIngreso;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.Label label6;
     }
 }

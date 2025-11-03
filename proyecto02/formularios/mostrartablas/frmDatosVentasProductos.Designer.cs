@@ -1,6 +1,6 @@
 ﻿namespace proyecto02.formularios.mostrartablas
 {
-    partial class frmDatosFacturas
+    partial class frmDatosVentasProductos
     {
         /// <summary>
         /// Required designer variable.
@@ -36,15 +36,11 @@
             this.tslAgregarForm = new System.Windows.Forms.ToolStripMenuItem();
             this.msMenu = new System.Windows.Forms.MenuStrip();
             this.lbTitulo = new System.Windows.Forms.Label();
-            this.txtNumeroTelefono = new System.Windows.Forms.TextBox();
-            this.txtImporteTotal = new System.Windows.Forms.Label();
-            this.txtHora = new System.Windows.Forms.TextBox();
-            this.lblNroDoc = new System.Windows.Forms.Label();
-            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.txtTipoDocumento = new System.Windows.Forms.TextBox();
             this.lblTipoDoc = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
             this.lblApellido = new System.Windows.Forms.Label();
-            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -63,7 +59,6 @@
             this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
             this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(75, 29);
             this.cerrarToolStripMenuItem.Text = "Cerrar";
-            this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
             // 
             // tsmConexion
             // 
@@ -72,28 +67,24 @@
             this.tsmConexion.Name = "tsmConexion";
             this.tsmConexion.Size = new System.Drawing.Size(102, 29);
             this.tsmConexion.Text = "Conexion";
-            this.tsmConexion.Click += new System.EventHandler(this.tsmConexion_Click);
             // 
             // tsmPC
             // 
             this.tsmPC.Name = "tsmPC";
-            this.tsmPC.Size = new System.Drawing.Size(270, 34);
+            this.tsmPC.Size = new System.Drawing.Size(243, 34);
             this.tsmPC.Text = "Probar conexion";
-            this.tsmPC.Click += new System.EventHandler(this.tsmPC_Click);
             // 
             // tsmReiniciar
             // 
             this.tsmReiniciar.Name = "tsmReiniciar";
             this.tsmReiniciar.Size = new System.Drawing.Size(92, 29);
             this.tsmReiniciar.Text = "Reiniciar";
-            this.tsmReiniciar.Click += new System.EventHandler(this.tsmReiniciar_Click);
             // 
             // tslAgregarForm
             // 
             this.tslAgregarForm.Name = "tslAgregarForm";
             this.tslAgregarForm.Size = new System.Drawing.Size(171, 29);
             this.tslAgregarForm.Text = "Agregar Elemento";
-            this.tslAgregarForm.Click += new System.EventHandler(this.tslAgregarForm_Click);
             // 
             // msMenu
             // 
@@ -106,120 +97,87 @@
             this.cerrarToolStripMenuItem});
             this.msMenu.Location = new System.Drawing.Point(0, 0);
             this.msMenu.Name = "msMenu";
-            this.msMenu.Size = new System.Drawing.Size(1813, 33);
+            this.msMenu.Size = new System.Drawing.Size(1822, 33);
             this.msMenu.TabIndex = 61;
             this.msMenu.Text = "menuStrip1";
             // 
             // lbTitulo
             // 
             this.lbTitulo.AutoSize = true;
-            this.lbTitulo.Location = new System.Drawing.Point(16, 51);
+            this.lbTitulo.Location = new System.Drawing.Point(20, 76);
             this.lbTitulo.Name = "lbTitulo";
             this.lbTitulo.Size = new System.Drawing.Size(67, 20);
             this.lbTitulo.TabIndex = 44;
             this.lbTitulo.Text = "Buscar: ";
             // 
-            // txtNumeroTelefono
+            // txtTipoDocumento
             // 
-            this.txtNumeroTelefono.Location = new System.Drawing.Point(20, 459);
-            this.txtNumeroTelefono.Name = "txtNumeroTelefono";
-            this.txtNumeroTelefono.Size = new System.Drawing.Size(497, 26);
-            this.txtNumeroTelefono.TabIndex = 56;
-            // 
-            // txtImporteTotal
-            // 
-            this.txtImporteTotal.AutoSize = true;
-            this.txtImporteTotal.Location = new System.Drawing.Point(18, 425);
-            this.txtImporteTotal.Name = "txtImporteTotal";
-            this.txtImporteTotal.Size = new System.Drawing.Size(99, 20);
-            this.txtImporteTotal.TabIndex = 55;
-            this.txtImporteTotal.Text = "Importe total";
-            // 
-            // txtHora
-            // 
-            this.txtHora.Location = new System.Drawing.Point(22, 385);
-            this.txtHora.Name = "txtHora";
-            this.txtHora.Size = new System.Drawing.Size(497, 26);
-            this.txtHora.TabIndex = 54;
-            // 
-            // lblNroDoc
-            // 
-            this.lblNroDoc.AutoSize = true;
-            this.lblNroDoc.Location = new System.Drawing.Point(18, 362);
-            this.lblNroDoc.Name = "lblNroDoc";
-            this.lblNroDoc.Size = new System.Drawing.Size(44, 20);
-            this.lblNroDoc.TabIndex = 53;
-            this.lblNroDoc.Text = "Hora";
-            // 
-            // txtFecha
-            // 
-            this.txtFecha.Location = new System.Drawing.Point(22, 317);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(497, 26);
-            this.txtFecha.TabIndex = 52;
+            this.txtTipoDocumento.Location = new System.Drawing.Point(24, 525);
+            this.txtTipoDocumento.Name = "txtTipoDocumento";
+            this.txtTipoDocumento.Size = new System.Drawing.Size(497, 26);
+            this.txtTipoDocumento.TabIndex = 52;
             // 
             // lblTipoDoc
             // 
             this.lblTipoDoc.AutoSize = true;
-            this.lblTipoDoc.Location = new System.Drawing.Point(18, 294);
+            this.lblTipoDoc.Location = new System.Drawing.Point(20, 502);
             this.lblTipoDoc.Name = "lblTipoDoc";
-            this.lblTipoDoc.Size = new System.Drawing.Size(54, 20);
+            this.lblTipoDoc.Size = new System.Drawing.Size(73, 20);
             this.lblTipoDoc.TabIndex = 51;
-            this.lblTipoDoc.Text = "Fecha";
+            this.lblTipoDoc.Text = "Cantidad";
             // 
-            // txtCodigo
+            // txtApellido
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(22, 253);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(497, 26);
-            this.txtCodigo.TabIndex = 50;
+            this.txtApellido.Location = new System.Drawing.Point(24, 461);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(497, 26);
+            this.txtApellido.TabIndex = 50;
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(18, 230);
+            this.lblApellido.Location = new System.Drawing.Point(20, 438);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(59, 20);
+            this.lblApellido.Size = new System.Drawing.Size(112, 20);
             this.lblApellido.TabIndex = 49;
-            this.lblApellido.Text = "Codigo";
+            this.lblApellido.Text = "Id de producto";
             // 
-            // txtNumero
+            // txtNombre
             // 
-            this.txtNumero.Location = new System.Drawing.Point(22, 188);
-            this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(497, 26);
-            this.txtNumero.TabIndex = 48;
+            this.txtNombre.Location = new System.Drawing.Point(24, 396);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(497, 26);
+            this.txtNombre.TabIndex = 48;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(18, 165);
+            this.lblNombre.Location = new System.Drawing.Point(20, 373);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(69, 20);
+            this.lblNombre.Size = new System.Drawing.Size(88, 20);
             this.lblNombre.TabIndex = 47;
-            this.lblNombre.Text = "Numero ";
+            this.lblNombre.Text = "Id de venta";
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(22, 126);
+            this.txtId.Location = new System.Drawing.Point(24, 334);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(497, 26);
             this.txtId.TabIndex = 46;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(22, 661);
+            this.btnBuscar.Location = new System.Drawing.Point(26, 686);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(497, 99);
             this.btnBuscar.TabIndex = 45;
             this.btnBuscar.Text = "Buscar en la tabla";
             this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(18, 103);
+            this.lblId.Location = new System.Drawing.Point(20, 311);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(23, 20);
             this.lblId.TabIndex = 43;
@@ -228,16 +186,14 @@
             // toolStripEliminar
             // 
             this.toolStripEliminar.Name = "toolStripEliminar";
-            this.toolStripEliminar.Size = new System.Drawing.Size(240, 32);
+            this.toolStripEliminar.Size = new System.Drawing.Size(146, 32);
             this.toolStripEliminar.Text = "Eliminar";
-            this.toolStripEliminar.Click += new System.EventHandler(this.toolStripEliminar_Click);
             // 
             // toolStripEditar
             // 
             this.toolStripEditar.Name = "toolStripEditar";
-            this.toolStripEditar.Size = new System.Drawing.Size(240, 32);
+            this.toolStripEditar.Size = new System.Drawing.Size(146, 32);
             this.toolStripEditar.Text = "Editar";
-            this.toolStripEditar.Click += new System.EventHandler(this.toolStripEditar_Click);
             // 
             // cmsDatos
             // 
@@ -246,44 +202,39 @@
             this.toolStripEditar,
             this.toolStripEliminar});
             this.cmsDatos.Name = "contextMenuStrip1";
-            this.cmsDatos.Size = new System.Drawing.Size(241, 101);
+            this.cmsDatos.Size = new System.Drawing.Size(147, 68);
             // 
             // dgvDatos
             // 
             this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDatos.ContextMenuStrip = this.cmsDatos;
-            this.dgvDatos.Location = new System.Drawing.Point(549, 37);
+            this.dgvDatos.Location = new System.Drawing.Point(553, 62);
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.RowHeadersWidth = 62;
             this.dgvDatos.RowTemplate.Height = 28;
             this.dgvDatos.Size = new System.Drawing.Size(1217, 734);
             this.dgvDatos.TabIndex = 42;
             // 
-            // frmDatosFacturas
+            // frmDatosVentasProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1813, 784);
+            this.ClientSize = new System.Drawing.Size(1822, 887);
             this.Controls.Add(this.msMenu);
             this.Controls.Add(this.lbTitulo);
-            this.Controls.Add(this.txtNumeroTelefono);
-            this.Controls.Add(this.txtImporteTotal);
-            this.Controls.Add(this.txtHora);
-            this.Controls.Add(this.lblNroDoc);
-            this.Controls.Add(this.txtFecha);
+            this.Controls.Add(this.txtTipoDocumento);
             this.Controls.Add(this.lblTipoDoc);
-            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.lblApellido);
-            this.Controls.Add(this.txtNumero);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.dgvDatos);
-            this.Name = "frmDatosFacturas";
-            this.Text = "Facturas";
-            this.Load += new System.EventHandler(this.frmDatosFacturas_Load);
+            this.Name = "frmDatosVentasProductos";
+            this.Text = "frmDatosVentasProductos";
             this.msMenu.ResumeLayout(false);
             this.msMenu.PerformLayout();
             this.cmsDatos.ResumeLayout(false);
@@ -302,15 +253,11 @@
         private System.Windows.Forms.ToolStripMenuItem tslAgregarForm;
         private System.Windows.Forms.MenuStrip msMenu;
         private System.Windows.Forms.Label lbTitulo;
-        private System.Windows.Forms.TextBox txtNumeroTelefono;
-        private System.Windows.Forms.Label txtImporteTotal;
-        private System.Windows.Forms.TextBox txtHora;
-        private System.Windows.Forms.Label lblNroDoc;
-        private System.Windows.Forms.TextBox txtFecha;
+        private System.Windows.Forms.TextBox txtTipoDocumento;
         private System.Windows.Forms.Label lblTipoDoc;
-        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label lblApellido;
-        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Button btnBuscar;

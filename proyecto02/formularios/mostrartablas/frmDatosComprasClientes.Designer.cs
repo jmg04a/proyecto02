@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbTitulo = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.lblApellido = new System.Windows.Forms.Label();
@@ -43,8 +44,12 @@
             this.tsmConexion = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmPC = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsDatos = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripEditar = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripEliminar = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.msMenu.SuspendLayout();
+            this.cmsDatos.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbTitulo
@@ -108,6 +113,7 @@
             // 
             this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.ContextMenuStrip = this.cmsDatos;
             this.dgvDatos.Location = new System.Drawing.Point(539, 24);
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.RowHeadersWidth = 62;
@@ -123,6 +129,7 @@
             this.btnBuscar.TabIndex = 39;
             this.btnBuscar.Text = "Buscar en la tabla";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // msMenu
             // 
@@ -135,7 +142,7 @@
             this.cerrarToolStripMenuItem});
             this.msMenu.Location = new System.Drawing.Point(0, 0);
             this.msMenu.Name = "msMenu";
-            this.msMenu.Size = new System.Drawing.Size(1749, 36);
+            this.msMenu.Size = new System.Drawing.Size(1749, 33);
             this.msMenu.TabIndex = 42;
             this.msMenu.Text = "menuStrip1";
             // 
@@ -144,12 +151,14 @@
             this.tslAgregarForm.Name = "tslAgregarForm";
             this.tslAgregarForm.Size = new System.Drawing.Size(171, 29);
             this.tslAgregarForm.Text = "Agregar Elemento";
+            this.tslAgregarForm.Click += new System.EventHandler(this.tslAgregarForm_Click);
             // 
             // tsmReiniciar
             // 
             this.tsmReiniciar.Name = "tsmReiniciar";
             this.tsmReiniciar.Size = new System.Drawing.Size(92, 29);
             this.tsmReiniciar.Text = "Reiniciar";
+            this.tsmReiniciar.Click += new System.EventHandler(this.tsmReiniciar_Click);
             // 
             // tsmConexion
             // 
@@ -158,18 +167,44 @@
             this.tsmConexion.Name = "tsmConexion";
             this.tsmConexion.Size = new System.Drawing.Size(102, 29);
             this.tsmConexion.Text = "Conexion";
+            this.tsmConexion.Click += new System.EventHandler(this.tsmConexion_Click);
             // 
             // tsmPC
             // 
             this.tsmPC.Name = "tsmPC";
-            this.tsmPC.Size = new System.Drawing.Size(243, 34);
+            this.tsmPC.Size = new System.Drawing.Size(270, 34);
             this.tsmPC.Text = "Probar conexion";
+            this.tsmPC.Click += new System.EventHandler(this.tsmPC_Click);
             // 
             // cerrarToolStripMenuItem
             // 
             this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
             this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(75, 29);
             this.cerrarToolStripMenuItem.Text = "Cerrar";
+            this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
+            // 
+            // cmsDatos
+            // 
+            this.cmsDatos.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.cmsDatos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripEditar,
+            this.toolStripEliminar});
+            this.cmsDatos.Name = "contextMenuStrip1";
+            this.cmsDatos.Size = new System.Drawing.Size(241, 101);
+            // 
+            // toolStripEditar
+            // 
+            this.toolStripEditar.Name = "toolStripEditar";
+            this.toolStripEditar.Size = new System.Drawing.Size(240, 32);
+            this.toolStripEditar.Text = "Editar";
+            this.toolStripEditar.Click += new System.EventHandler(this.toolStripEditar_Click);
+            // 
+            // toolStripEliminar
+            // 
+            this.toolStripEliminar.Name = "toolStripEliminar";
+            this.toolStripEliminar.Size = new System.Drawing.Size(240, 32);
+            this.toolStripEliminar.Text = "Eliminar";
+            this.toolStripEliminar.Click += new System.EventHandler(this.toolStripEliminar_Click);
             // 
             // frmDatosComprasClientes
             // 
@@ -188,9 +223,11 @@
             this.Controls.Add(this.lblId);
             this.Name = "frmDatosComprasClientes";
             this.Text = "frmDatosComprasClientes";
+            this.Load += new System.EventHandler(this.frmDatosComprasClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.msMenu.ResumeLayout(false);
             this.msMenu.PerformLayout();
+            this.cmsDatos.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,5 +250,8 @@
         private System.Windows.Forms.ToolStripMenuItem tsmConexion;
         private System.Windows.Forms.ToolStripMenuItem tsmPC;
         private System.Windows.Forms.ToolStripMenuItem cerrarToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip cmsDatos;
+        private System.Windows.Forms.ToolStripMenuItem toolStripEditar;
+        private System.Windows.Forms.ToolStripMenuItem toolStripEliminar;
     }
 }

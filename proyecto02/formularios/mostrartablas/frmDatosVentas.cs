@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto2.formularios
+namespace proyecto02.formularios.mostrartablas
 {
-    public partial class frmEditarFacturas : Form
+    public partial class frmDatosVentas : Form
     {
-        private int id = -1;
-        public frmEditarFacturas()
+        public frmDatosVentas()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
