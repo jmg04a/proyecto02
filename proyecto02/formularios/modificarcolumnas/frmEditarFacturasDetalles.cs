@@ -187,5 +187,10 @@ namespace Proyecto2.formularios
         {
             this.Close();
         }
+
+        private void frmEditarFacturasDetalles_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

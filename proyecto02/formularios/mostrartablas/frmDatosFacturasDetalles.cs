@@ -16,14 +16,16 @@ namespace proyecto02.formularios.mostrartablas
     public partial class frmDatosFacturasDetalles : Form
     {
         Datos datos = new Datos();
-        string defaultQuery = "SELECT id " +
-                              "AS  \"Id\", nombre AS \"Nombre\"," +
-                              "apellido AS \"Apellido\"," +
-                              "tipo_doc AS \"Tipo de Documento\"," +
-                              "nro_doc AS \"Numero de Documento\"," +
-                              "nro_tel_princ AS \"Numero de telefono\"," +
-                              "nro_tel_sec AS \"Numero de telefono (secundario)\"," +
-                              "email AS \"Correo Electronico\" FROM clientes";
+        string defaultQuery = "SELECT " +
+            "id AS  \"Id\", " +
+            "id_factura AS \"Nombre\"," +
+                              "tipo AS \"Tipo\"," +
+                              "descr_factura AS \"Descripcion de la Factura\"," +
+                              "costo_asoc AS \"Costo Asociado\"," +
+                              "iva AS \"Iva\"," +
+                              "medio_de_pago AS \"Medio de pago\"," +
+                              "descr_pago AS \"Descripcion de pago\" " +
+            "FROM facturas_detalles";
         public frmDatosFacturasDetalles()
         {
             InitializeComponent();
@@ -212,7 +214,7 @@ namespace proyecto02.formularios.mostrartablas
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     // Asegúrate de que 'defaultQuery' ahora apunte a 'facturas_detalles'
-                    mostrarDatos(defaultQuery);
+                    mostrarDatos(defaultQuery + ";");
                 }
                 else
                 {

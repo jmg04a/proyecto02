@@ -17,7 +17,7 @@ namespace Proyecto2
     public partial class frmDatosClientes : Form
     {
         Datos datos = new Datos();
-        string defaultQuery="SELECT id " +
+        string defaultQuery = "SELECT id " +
                 "AS  \"Id\", nombre AS \"Nombre\"," +
                 "apellido AS \"Apellido\"," +
                 "tipo_doc AS \"Tipo de Documento\"," +

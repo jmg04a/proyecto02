@@ -60,7 +60,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(620, 464);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 64);
             this.button2.TabIndex = 34;
@@ -71,7 +71,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(281, 464);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 64);
             this.button1.TabIndex = 33;
@@ -82,7 +82,7 @@
             // txtMedioPago
             // 
             this.txtMedioPago.Location = new System.Drawing.Point(545, 331);
-            this.txtMedioPago.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMedioPago.Margin = new System.Windows.Forms.Padding(4);
             this.txtMedioPago.Name = "txtMedioPago";
             this.txtMedioPago.Size = new System.Drawing.Size(321, 31);
             this.txtMedioPago.TabIndex = 32;
@@ -100,7 +100,7 @@
             // txtIva
             // 
             this.txtIva.Location = new System.Drawing.Point(545, 291);
-            this.txtIva.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIva.Margin = new System.Windows.Forms.Padding(4);
             this.txtIva.Name = "txtIva";
             this.txtIva.Size = new System.Drawing.Size(321, 31);
             this.txtIva.TabIndex = 30;
@@ -108,7 +108,7 @@
             // txtCostoAsociado
             // 
             this.txtCostoAsociado.Location = new System.Drawing.Point(545, 247);
-            this.txtCostoAsociado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCostoAsociado.Margin = new System.Windows.Forms.Padding(4);
             this.txtCostoAsociado.Name = "txtCostoAsociado";
             this.txtCostoAsociado.Size = new System.Drawing.Size(321, 31);
             this.txtCostoAsociado.TabIndex = 29;
@@ -116,7 +116,7 @@
             // txtDescripcionFactura
             // 
             this.txtDescripcionFactura.Location = new System.Drawing.Point(545, 203);
-            this.txtDescripcionFactura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcionFactura.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcionFactura.Name = "txtDescripcionFactura";
             this.txtDescripcionFactura.Size = new System.Drawing.Size(321, 31);
             this.txtDescripcionFactura.TabIndex = 28;
@@ -124,7 +124,7 @@
             // txtTipo
             // 
             this.txtTipo.Location = new System.Drawing.Point(545, 160);
-            this.txtTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(321, 31);
             this.txtTipo.TabIndex = 27;
@@ -132,7 +132,7 @@
             // txtIdFactura
             // 
             this.txtIdFactura.Location = new System.Drawing.Point(545, 126);
-            this.txtIdFactura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdFactura.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdFactura.Name = "txtIdFactura";
             this.txtIdFactura.Size = new System.Drawing.Size(321, 31);
             this.txtIdFactura.TabIndex = 26;
@@ -190,7 +190,7 @@
             // txtDescripcionPago
             // 
             this.txtDescripcionPago.Location = new System.Drawing.Point(545, 371);
-            this.txtDescripcionPago.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcionPago.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcionPago.Name = "txtDescripcionPago";
             this.txtDescripcionPago.Size = new System.Drawing.Size(321, 31);
             this.txtDescripcionPago.TabIndex = 37;
@@ -227,9 +227,10 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEditarFacturasDetalles";
             this.Text = "frmFacturasDetalles";
+            this.Load += new System.EventHandler(this.frmEditarFacturasDetalles_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

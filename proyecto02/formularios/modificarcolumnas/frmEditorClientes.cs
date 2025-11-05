@@ -118,5 +118,10 @@ namespace Proyecto2
         {
             this.Close();
         }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

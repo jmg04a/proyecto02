@@ -42,5 +42,17 @@ namespace proyecto02
             frmDatosFacturas frm = new frmDatosFacturas();
             frm.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            frmDatosFacturasDetalles frm = new frmDatosFacturasDetalles();
+            frm.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            frmDatosProductos frm = new frmDatosProductos();
+            frm.Show();
+        }
     }
 }

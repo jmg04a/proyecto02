@@ -12,6 +12,9 @@ namespace Proyecto2.formularios
 {
     public partial class frmEditorProductos : Form
     {
+
+
+
         public frmEditorProductos()
         {
             InitializeComponent();
@@ -20,6 +23,11 @@ namespace Proyecto2.formularios
         private void frmEditorProductos_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
