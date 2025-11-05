@@ -11,7 +11,7 @@ namespace Octubre.Data
 {
     internal class Datos
     {
-        private string connectionString = 
+        private string connectionString =
             "Host=localhost;" +
             "Username=admin;" +
             "Password=mariobros3;" +
