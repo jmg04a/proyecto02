@@ -36,7 +36,6 @@
             this.tslAgregarForm = new System.Windows.Forms.ToolStripMenuItem();
             this.msMenu = new System.Windows.Forms.MenuStrip();
             this.lbTitulo = new System.Windows.Forms.Label();
-            this.txtNumeroTelefono = new System.Windows.Forms.TextBox();
             this.txtImporteTotal = new System.Windows.Forms.Label();
             this.txtHora = new System.Windows.Forms.TextBox();
             this.lblNroDoc = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@
             this.toolStripEditar = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsDatos = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.dgvDatos = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.msMenu.SuspendLayout();
             this.cmsDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
@@ -61,7 +61,7 @@
             // cerrarToolStripMenuItem
             // 
             this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
-            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(75, 29);
+            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(75, 30);
             this.cerrarToolStripMenuItem.Text = "Cerrar";
             this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
             // 
@@ -70,28 +70,28 @@
             this.tsmConexion.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmPC});
             this.tsmConexion.Name = "tsmConexion";
-            this.tsmConexion.Size = new System.Drawing.Size(102, 29);
+            this.tsmConexion.Size = new System.Drawing.Size(102, 30);
             this.tsmConexion.Text = "Conexion";
             this.tsmConexion.Click += new System.EventHandler(this.tsmConexion_Click);
             // 
             // tsmPC
             // 
             this.tsmPC.Name = "tsmPC";
-            this.tsmPC.Size = new System.Drawing.Size(270, 34);
+            this.tsmPC.Size = new System.Drawing.Size(243, 34);
             this.tsmPC.Text = "Probar conexion";
             this.tsmPC.Click += new System.EventHandler(this.tsmPC_Click);
             // 
             // tsmReiniciar
             // 
             this.tsmReiniciar.Name = "tsmReiniciar";
-            this.tsmReiniciar.Size = new System.Drawing.Size(92, 29);
+            this.tsmReiniciar.Size = new System.Drawing.Size(92, 30);
             this.tsmReiniciar.Text = "Reiniciar";
             this.tsmReiniciar.Click += new System.EventHandler(this.tsmReiniciar_Click);
             // 
             // tslAgregarForm
             // 
             this.tslAgregarForm.Name = "tslAgregarForm";
-            this.tslAgregarForm.Size = new System.Drawing.Size(171, 29);
+            this.tslAgregarForm.Size = new System.Drawing.Size(171, 30);
             this.tslAgregarForm.Text = "Agregar Elemento";
             this.tslAgregarForm.Click += new System.EventHandler(this.tslAgregarForm_Click);
             // 
@@ -106,7 +106,7 @@
             this.cerrarToolStripMenuItem});
             this.msMenu.Location = new System.Drawing.Point(0, 0);
             this.msMenu.Name = "msMenu";
-            this.msMenu.Size = new System.Drawing.Size(1813, 33);
+            this.msMenu.Size = new System.Drawing.Size(1813, 36);
             this.msMenu.TabIndex = 61;
             this.msMenu.Text = "menuStrip1";
             // 
@@ -118,13 +118,6 @@
             this.lbTitulo.Size = new System.Drawing.Size(67, 20);
             this.lbTitulo.TabIndex = 44;
             this.lbTitulo.Text = "Buscar: ";
-            // 
-            // txtNumeroTelefono
-            // 
-            this.txtNumeroTelefono.Location = new System.Drawing.Point(20, 459);
-            this.txtNumeroTelefono.Name = "txtNumeroTelefono";
-            this.txtNumeroTelefono.Size = new System.Drawing.Size(497, 26);
-            this.txtNumeroTelefono.TabIndex = 56;
             // 
             // txtImporteTotal
             // 
@@ -228,14 +221,14 @@
             // toolStripEliminar
             // 
             this.toolStripEliminar.Name = "toolStripEliminar";
-            this.toolStripEliminar.Size = new System.Drawing.Size(240, 32);
+            this.toolStripEliminar.Size = new System.Drawing.Size(146, 32);
             this.toolStripEliminar.Text = "Eliminar";
             this.toolStripEliminar.Click += new System.EventHandler(this.toolStripEliminar_Click);
             // 
             // toolStripEditar
             // 
             this.toolStripEditar.Name = "toolStripEditar";
-            this.toolStripEditar.Size = new System.Drawing.Size(240, 32);
+            this.toolStripEditar.Size = new System.Drawing.Size(146, 32);
             this.toolStripEditar.Text = "Editar";
             this.toolStripEditar.Click += new System.EventHandler(this.toolStripEditar_Click);
             // 
@@ -246,7 +239,7 @@
             this.toolStripEditar,
             this.toolStripEliminar});
             this.cmsDatos.Name = "contextMenuStrip1";
-            this.cmsDatos.Size = new System.Drawing.Size(241, 101);
+            this.cmsDatos.Size = new System.Drawing.Size(147, 68);
             // 
             // dgvDatos
             // 
@@ -260,14 +253,21 @@
             this.dgvDatos.Size = new System.Drawing.Size(1217, 734);
             this.dgvDatos.TabIndex = 42;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(22, 459);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(497, 26);
+            this.textBox1.TabIndex = 62;
+            // 
             // frmDatosFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1813, 784);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.msMenu);
             this.Controls.Add(this.lbTitulo);
-            this.Controls.Add(this.txtNumeroTelefono);
             this.Controls.Add(this.txtImporteTotal);
             this.Controls.Add(this.txtHora);
             this.Controls.Add(this.lblNroDoc);
@@ -302,7 +302,6 @@
         private System.Windows.Forms.ToolStripMenuItem tslAgregarForm;
         private System.Windows.Forms.MenuStrip msMenu;
         private System.Windows.Forms.Label lbTitulo;
-        private System.Windows.Forms.TextBox txtNumeroTelefono;
         private System.Windows.Forms.Label txtImporteTotal;
         private System.Windows.Forms.TextBox txtHora;
         private System.Windows.Forms.Label lblNroDoc;
@@ -319,5 +318,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripEditar;
         private System.Windows.Forms.ContextMenuStrip cmsDatos;
         private System.Windows.Forms.DataGridView dgvDatos;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

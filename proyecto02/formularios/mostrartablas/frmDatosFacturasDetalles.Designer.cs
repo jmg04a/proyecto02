@@ -87,12 +87,14 @@
             this.tsmReiniciar.Name = "tsmReiniciar";
             this.tsmReiniciar.Size = new System.Drawing.Size(92, 29);
             this.tsmReiniciar.Text = "Reiniciar";
+            this.tsmReiniciar.Click += new System.EventHandler(this.tsmReiniciar_Click);
             // 
             // tslAgregarForm
             // 
             this.tslAgregarForm.Name = "tslAgregarForm";
             this.tslAgregarForm.Size = new System.Drawing.Size(171, 29);
             this.tslAgregarForm.Text = "Agregar Elemento";
+            this.tslAgregarForm.Click += new System.EventHandler(this.tslAgregarForm_Click);
             // 
             // msMenu
             // 

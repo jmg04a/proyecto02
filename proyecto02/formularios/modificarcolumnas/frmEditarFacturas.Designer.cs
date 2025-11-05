@@ -31,11 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.txtNroDocumento = new System.Windows.Forms.TextBox();
-            this.txtTipoDocumento = new System.Windows.Forms.TextBox();
-            this.txtApellido = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtImporteTotal = new System.Windows.Forms.TextBox();
+            this.txtHora = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -60,6 +60,7 @@
             this.button2.TabIndex = 34;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -71,40 +72,40 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtTelefono
+            // txtImporteTotal
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(414, 253);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(242, 26);
-            this.txtTelefono.TabIndex = 29;
+            this.txtImporteTotal.Location = new System.Drawing.Point(414, 253);
+            this.txtImporteTotal.Name = "txtImporteTotal";
+            this.txtImporteTotal.Size = new System.Drawing.Size(242, 26);
+            this.txtImporteTotal.TabIndex = 29;
             // 
-            // txtNroDocumento
+            // txtHora
             // 
-            this.txtNroDocumento.Location = new System.Drawing.Point(414, 218);
-            this.txtNroDocumento.Name = "txtNroDocumento";
-            this.txtNroDocumento.Size = new System.Drawing.Size(242, 26);
-            this.txtNroDocumento.TabIndex = 28;
+            this.txtHora.Location = new System.Drawing.Point(414, 218);
+            this.txtHora.Name = "txtHora";
+            this.txtHora.Size = new System.Drawing.Size(242, 26);
+            this.txtHora.TabIndex = 28;
             // 
-            // txtTipoDocumento
+            // txtFecha
             // 
-            this.txtTipoDocumento.Location = new System.Drawing.Point(414, 183);
-            this.txtTipoDocumento.Name = "txtTipoDocumento";
-            this.txtTipoDocumento.Size = new System.Drawing.Size(242, 26);
-            this.txtTipoDocumento.TabIndex = 27;
+            this.txtFecha.Location = new System.Drawing.Point(414, 183);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(242, 26);
+            this.txtFecha.TabIndex = 27;
             // 
-            // txtApellido
+            // txtCodigo
             // 
-            this.txtApellido.Location = new System.Drawing.Point(414, 156);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(242, 26);
-            this.txtApellido.TabIndex = 26;
+            this.txtCodigo.Location = new System.Drawing.Point(414, 156);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(242, 26);
+            this.txtCodigo.TabIndex = 26;
             // 
-            // txtNombre
+            // txtNumero
             // 
-            this.txtNombre.Location = new System.Drawing.Point(414, 121);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(242, 26);
-            this.txtNombre.TabIndex = 25;
+            this.txtNumero.Location = new System.Drawing.Point(414, 121);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(242, 26);
+            this.txtNumero.TabIndex = 25;
             // 
             // label6
             // 
@@ -159,11 +160,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtTelefono);
-            this.Controls.Add(this.txtNroDocumento);
-            this.Controls.Add(this.txtTipoDocumento);
-            this.Controls.Add(this.txtApellido);
-            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtImporteTotal);
+            this.Controls.Add(this.txtHora);
+            this.Controls.Add(this.txtFecha);
+            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -181,11 +182,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.TextBox txtNroDocumento;
-        private System.Windows.Forms.TextBox txtTipoDocumento;
-        private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtImporteTotal;
+        private System.Windows.Forms.TextBox txtHora;
+        private System.Windows.Forms.TextBox txtFecha;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

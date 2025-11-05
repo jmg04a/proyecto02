@@ -18,11 +18,11 @@ namespace proyecto02.formularios.mostrartablas
         Datos datos = new Datos();
         string defaultQuery = "SELECT " +
                               "id AS \"Id\"," +
-                              "numero AS \"Nombre\"," +
-                              "codigo AS \"Apellido\"," +
-                              "fecha AS \"Tipo de Documento\"," +
-                              "hora AS \"Numero de Documento\"," +
-                              "importe_total AS \"Numero de telefono\"," +
+                              "numero AS \"Numero\"," +
+                              "codigo AS \"Codigo\"," +
+                              "fecha AS \"Fecha\"," +
+                              "hora AS \"Hora\"," +
+                              "importe_total AS \"Importe total\"" +
                               "FROM facturas";
 
         public frmDatosFacturas()
@@ -37,7 +37,7 @@ namespace proyecto02.formularios.mostrartablas
             txtCodigo.Text = string.Empty;
             txtFecha.Text = string.Empty;
             txtHora.Text = string.Empty;
-            txtNumeroTelefono.Text = string.Empty;
+            textBox1.Text = string.Empty;
         }
 
         private void mostrarDatos(string query)
@@ -60,7 +60,7 @@ namespace proyecto02.formularios.mostrartablas
 
         private void tslAgregarForm_Click(object sender, EventArgs e)
         {
-            frmDatosFacturas frm = new frmDatosFacturas();
+            frmEditarFacturas frm = new frmEditarFacturas();
             frm.Show();
         }
 
@@ -95,7 +95,8 @@ namespace proyecto02.formularios.mostrartablas
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            // --- Versión Insegura (NO RECOMENDADA) ---
+            // --- Versión Insegura (Literal) con if + try-catch por variable ---
+
             String buscarQuery = defaultQuery + " WHERE ";
             bool variasOpciones = false;
 
@@ -104,12 +105,18 @@ namespace proyecto02.formularios.mostrartablas
             {
                 try
                 {
-                    buscarQuery += " id = " + int.Parse(txtId.Text) + "";
+                    // Como NO está vacío, intentamos el Parse
+                    int idValue = int.Parse(txtId.Text);
+
+                    // Si funciona, lo agregamos
+                    buscarQuery += " id = " + idValue;
                     variasOpciones = true;
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("El ID solo acepta numeros", "Programa", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Si falla (ej. "hola"), mostramos error
+                    MessageBox.Show("El ID solo acepta números enteros.", "Error de Formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
             }
 
@@ -117,7 +124,9 @@ namespace proyecto02.formularios.mostrartablas
             if (!string.IsNullOrWhiteSpace(txtNumero.Text))
             {
                 if (variasOpciones) { buscarQuery += " AND "; }
-                buscarQuery += " numero like '%" + txtNumero.Text + "%'";
+
+                // (Inseguro: Vulnerable a Inyección SQL)
+                buscarQuery += " numero LIKE '%" + txtNumero.Text + "%'";
                 variasOpciones = true;
             }
 
@@ -125,34 +134,73 @@ namespace proyecto02.formularios.mostrartablas
             if (!string.IsNullOrWhiteSpace(txtCodigo.Text))
             {
                 if (variasOpciones) { buscarQuery += " AND "; }
-                buscarQuery += " codigo like '%" + txtCodigo.Text + "%'";
+
+                // (Inseguro: Vulnerable a Inyección SQL)
+                buscarQuery += " codigo LIKE '%" + txtCodigo.Text + "%'";
                 variasOpciones = true;
             }
 
             // --- Fecha (date) ---
             if (!string.IsNullOrWhiteSpace(txtFecha.Text))
             {
-                if (variasOpciones) { buscarQuery += " AND "; }
-                // Esto es muy peligroso y depende del formato de la base de datos
-                buscarQuery += " fecha = '" + txtFecha.Text + "'";
-                variasOpciones = true;
+                try
+                {
+                    // Como NO está vacío, intentamos el Parse
+                    DateTime fechaValue = DateTime.Parse(txtFecha.Text);
+
+                    // Si funciona, lo agregamos
+                    if (variasOpciones) { buscarQuery += " AND "; }
+                    buscarQuery += " fecha = '" + fechaValue.ToString("yyyy-MM-dd") + "'";
+                    variasOpciones = true;
+                }
+                catch (Exception ex)
+                {
+                    // Si falla, mostramos error
+                    MessageBox.Show("El formato de la FECHA no es válido. Use YYYY-MM-DD.", "Error de Formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
 
             // --- Hora (time) ---
             if (!string.IsNullOrWhiteSpace(txtHora.Text))
             {
-                if (variasOpciones) { buscarQuery += " AND "; }
-                buscarQuery += " hora = '" + txtHora.Text + "'";
-                variasOpciones = true;
+                try
+                {
+                    // Como NO está vacío, intentamos el Parse
+                    TimeSpan horaValue = TimeSpan.Parse(txtHora.Text);
+
+                    // Si funciona, lo agregamos
+                    if (variasOpciones) { buscarQuery += " AND "; }
+                    buscarQuery += " hora = '" + horaValue.ToString(@"hh\:mm\:ss") + "'";
+                    variasOpciones = true;
+                }
+                catch (Exception ex)
+                {
+                    // Si falla, mostramos error
+                    MessageBox.Show("El formato de la HORA no es válido. Use HH:MM:SS.", "Error de Formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
 
             // --- Importe Total (decimal) ---
-            if (!string.IsNullOrWhiteSpace(txtImporteTotal.Text))
+            if (!string.IsNullOrWhiteSpace(textBox1.Text))
             {
-                if (variasOpciones) { buscarQuery += " AND "; }
-                // Esto fallará si el usuario usa ',' en lugar de '.'
-                buscarQuery += " importe_total = " + txtImporteTotal.Text;
-                variasOpciones = true;
+                try
+                {
+                    // Como NO está vacío, intentamos el Parse
+                    decimal importeValue = decimal.Parse(txtImporteTotal.Text, System.Globalization.CultureInfo.InvariantCulture);
+
+                    // Si funciona, lo agregamos
+                    if (variasOpciones) { buscarQuery += " AND "; }
+                    buscarQuery += " importe_total = " + importeValue.ToString(System.Globalization.CultureInfo.InvariantCulture);
+                    variasOpciones = true;
+                }
+                catch (Exception ex)
+                {
+                    // Si falla, mostramos error
+                    MessageBox.Show("El formato del IMPORTE no es válido. Use 123.45 (con punto).", "Error de Formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
 
             // --- Ejecución ---
@@ -169,7 +217,7 @@ namespace proyecto02.formularios.mostrartablas
         private void toolStripEditar_Click(object sender, EventArgs e)
         {
             string r = dgvDatos[0, dgvDatos.CurrentCell.RowIndex].Value.ToString();
-            frmEditarFacturas frm = new frmEditarFacturas(Convert.ToInt32(r));
+            frmEditorClientes frm = new frmEditorClientes(Convert.ToInt32(r));
             frm.ShowDialog();
         }
 
@@ -178,7 +226,7 @@ namespace proyecto02.formularios.mostrartablas
             string r = dgvDatos[0,
                 dgvDatos.CurrentCell.RowIndex].Value.ToString();
             if (MessageBox.Show("Deseas Eliminar el Registro", "Sistema",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 bool s = datos.ExecuteQuery("DELETE FROM facturas WHERE id=" + r);
                 if (s)

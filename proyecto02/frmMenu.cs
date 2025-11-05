@@ -36,5 +36,11 @@ namespace proyecto02
             frmDatosEmpleados frm = new frmDatosEmpleados();
             frm.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmDatosFacturas frm = new frmDatosFacturas();
+            frm.Show();
+        }
     }
 }

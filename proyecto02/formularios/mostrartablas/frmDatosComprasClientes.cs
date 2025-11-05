@@ -159,7 +159,7 @@ namespace proyecto02.formularios.mostrartablas
             string r = dgvDatos[0,
                 dgvDatos.CurrentCell.RowIndex].Value.ToString();
             if (MessageBox.Show("Deseas Eliminar el Registro", "Sistema",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 bool s = datos.ExecuteQuery("DELETE FROM compras_clientes WHERE id=" + r);
                 if (s)
