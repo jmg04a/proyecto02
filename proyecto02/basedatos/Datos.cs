@@ -12,7 +12,7 @@ namespace Octubre.Data
     internal class Datos
     {
         private string connectionString =
-            "Host=192.168.100.64;" +
+            "Host=localhost;" +
             "Username=admin;" +
             "Password=mariobros3;" +
             "Database=Proyecto";
