@@ -92,6 +92,7 @@
             this.button5.TabIndex = 7;
             this.button5.Text = "ventas";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -102,6 +103,7 @@
             this.button6.TabIndex = 6;
             this.button6.Text = "proovedores";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -134,6 +136,7 @@
             this.button12.TabIndex = 8;
             this.button12.Text = "ventas productos";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // frmMenu
             // 

@@ -144,7 +144,7 @@ namespace Proyecto2
                 {
                     buscarQuery += " AND ";
                 }
-                buscarQuery += " tipo_doc like '%" + txtNumeroTelefono2.Text +"%'";
+                buscarQuery += " nro_tel_sec like '%" + txtNumeroTelefono2.Text +"%'";
                 variasOpciones = true;
             }
             if (variasOpciones)

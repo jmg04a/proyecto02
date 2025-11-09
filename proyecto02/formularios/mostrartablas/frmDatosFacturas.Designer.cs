@@ -51,8 +51,8 @@
             this.toolStripEliminar = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripEditar = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsDatos = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.msMenu.SuspendLayout();
             this.cmsDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
@@ -61,7 +61,7 @@
             // cerrarToolStripMenuItem
             // 
             this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
-            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(75, 30);
+            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(98, 36);
             this.cerrarToolStripMenuItem.Text = "Cerrar";
             this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
             // 
@@ -70,28 +70,28 @@
             this.tsmConexion.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmPC});
             this.tsmConexion.Name = "tsmConexion";
-            this.tsmConexion.Size = new System.Drawing.Size(102, 30);
+            this.tsmConexion.Size = new System.Drawing.Size(135, 36);
             this.tsmConexion.Text = "Conexion";
             this.tsmConexion.Click += new System.EventHandler(this.tsmConexion_Click);
             // 
             // tsmPC
             // 
             this.tsmPC.Name = "tsmPC";
-            this.tsmPC.Size = new System.Drawing.Size(243, 34);
+            this.tsmPC.Size = new System.Drawing.Size(320, 44);
             this.tsmPC.Text = "Probar conexion";
             this.tsmPC.Click += new System.EventHandler(this.tsmPC_Click);
             // 
             // tsmReiniciar
             // 
             this.tsmReiniciar.Name = "tsmReiniciar";
-            this.tsmReiniciar.Size = new System.Drawing.Size(92, 30);
+            this.tsmReiniciar.Size = new System.Drawing.Size(123, 36);
             this.tsmReiniciar.Text = "Reiniciar";
             this.tsmReiniciar.Click += new System.EventHandler(this.tsmReiniciar_Click);
             // 
             // tslAgregarForm
             // 
             this.tslAgregarForm.Name = "tslAgregarForm";
-            this.tslAgregarForm.Size = new System.Drawing.Size(171, 30);
+            this.tslAgregarForm.Size = new System.Drawing.Size(226, 36);
             this.tslAgregarForm.Text = "Agregar Elemento";
             this.tslAgregarForm.Click += new System.EventHandler(this.tslAgregarForm_Click);
             // 
@@ -106,104 +106,117 @@
             this.cerrarToolStripMenuItem});
             this.msMenu.Location = new System.Drawing.Point(0, 0);
             this.msMenu.Name = "msMenu";
-            this.msMenu.Size = new System.Drawing.Size(1813, 36);
+            this.msMenu.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.msMenu.Size = new System.Drawing.Size(2417, 40);
             this.msMenu.TabIndex = 61;
             this.msMenu.Text = "menuStrip1";
             // 
             // lbTitulo
             // 
             this.lbTitulo.AutoSize = true;
-            this.lbTitulo.Location = new System.Drawing.Point(16, 51);
+            this.lbTitulo.Location = new System.Drawing.Point(21, 64);
+            this.lbTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTitulo.Name = "lbTitulo";
-            this.lbTitulo.Size = new System.Drawing.Size(67, 20);
+            this.lbTitulo.Size = new System.Drawing.Size(91, 25);
             this.lbTitulo.TabIndex = 44;
             this.lbTitulo.Text = "Buscar: ";
             // 
             // txtImporteTotal
             // 
             this.txtImporteTotal.AutoSize = true;
-            this.txtImporteTotal.Location = new System.Drawing.Point(18, 425);
+            this.txtImporteTotal.Location = new System.Drawing.Point(24, 531);
+            this.txtImporteTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtImporteTotal.Name = "txtImporteTotal";
-            this.txtImporteTotal.Size = new System.Drawing.Size(99, 20);
+            this.txtImporteTotal.Size = new System.Drawing.Size(130, 25);
             this.txtImporteTotal.TabIndex = 55;
             this.txtImporteTotal.Text = "Importe total";
             // 
             // txtHora
             // 
-            this.txtHora.Location = new System.Drawing.Point(22, 385);
+            this.txtHora.Location = new System.Drawing.Point(29, 481);
+            this.txtHora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtHora.Name = "txtHora";
-            this.txtHora.Size = new System.Drawing.Size(497, 26);
+            this.txtHora.Size = new System.Drawing.Size(661, 31);
             this.txtHora.TabIndex = 54;
             // 
             // lblNroDoc
             // 
             this.lblNroDoc.AutoSize = true;
-            this.lblNroDoc.Location = new System.Drawing.Point(18, 362);
+            this.lblNroDoc.Location = new System.Drawing.Point(24, 452);
+            this.lblNroDoc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroDoc.Name = "lblNroDoc";
-            this.lblNroDoc.Size = new System.Drawing.Size(44, 20);
+            this.lblNroDoc.Size = new System.Drawing.Size(58, 25);
             this.lblNroDoc.TabIndex = 53;
             this.lblNroDoc.Text = "Hora";
             // 
             // txtFecha
             // 
-            this.txtFecha.Location = new System.Drawing.Point(22, 317);
+            this.txtFecha.Location = new System.Drawing.Point(29, 396);
+            this.txtFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(497, 26);
+            this.txtFecha.Size = new System.Drawing.Size(661, 31);
             this.txtFecha.TabIndex = 52;
             // 
             // lblTipoDoc
             // 
             this.lblTipoDoc.AutoSize = true;
-            this.lblTipoDoc.Location = new System.Drawing.Point(18, 294);
+            this.lblTipoDoc.Location = new System.Drawing.Point(24, 368);
+            this.lblTipoDoc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipoDoc.Name = "lblTipoDoc";
-            this.lblTipoDoc.Size = new System.Drawing.Size(54, 20);
+            this.lblTipoDoc.Size = new System.Drawing.Size(72, 25);
             this.lblTipoDoc.TabIndex = 51;
             this.lblTipoDoc.Text = "Fecha";
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(22, 253);
+            this.txtCodigo.Location = new System.Drawing.Point(29, 316);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(497, 26);
+            this.txtCodigo.Size = new System.Drawing.Size(661, 31);
             this.txtCodigo.TabIndex = 50;
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(18, 230);
+            this.lblApellido.Location = new System.Drawing.Point(24, 288);
+            this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(59, 20);
+            this.lblApellido.Size = new System.Drawing.Size(80, 25);
             this.lblApellido.TabIndex = 49;
             this.lblApellido.Text = "Codigo";
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(22, 188);
+            this.txtNumero.Location = new System.Drawing.Point(29, 235);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(497, 26);
+            this.txtNumero.Size = new System.Drawing.Size(661, 31);
             this.txtNumero.TabIndex = 48;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(18, 165);
+            this.lblNombre.Location = new System.Drawing.Point(24, 206);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(69, 20);
+            this.lblNombre.Size = new System.Drawing.Size(93, 25);
             this.lblNombre.TabIndex = 47;
             this.lblNombre.Text = "Numero ";
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(22, 126);
+            this.txtId.Location = new System.Drawing.Point(29, 158);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(497, 26);
+            this.txtId.Size = new System.Drawing.Size(661, 31);
             this.txtId.TabIndex = 46;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(22, 661);
+            this.btnBuscar.Location = new System.Drawing.Point(29, 826);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(497, 99);
+            this.btnBuscar.Size = new System.Drawing.Size(663, 124);
             this.btnBuscar.TabIndex = 45;
             this.btnBuscar.Text = "Buscar en la tabla";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -212,23 +225,24 @@
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(18, 103);
+            this.lblId.Location = new System.Drawing.Point(24, 129);
+            this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(23, 20);
+            this.lblId.Size = new System.Drawing.Size(29, 25);
             this.lblId.TabIndex = 43;
             this.lblId.Text = "Id";
             // 
             // toolStripEliminar
             // 
             this.toolStripEliminar.Name = "toolStripEliminar";
-            this.toolStripEliminar.Size = new System.Drawing.Size(146, 32);
+            this.toolStripEliminar.Size = new System.Drawing.Size(173, 38);
             this.toolStripEliminar.Text = "Eliminar";
             this.toolStripEliminar.Click += new System.EventHandler(this.toolStripEliminar_Click);
             // 
             // toolStripEditar
             // 
             this.toolStripEditar.Name = "toolStripEditar";
-            this.toolStripEditar.Size = new System.Drawing.Size(146, 32);
+            this.toolStripEditar.Size = new System.Drawing.Size(173, 38);
             this.toolStripEditar.Text = "Editar";
             this.toolStripEditar.Click += new System.EventHandler(this.toolStripEditar_Click);
             // 
@@ -239,32 +253,38 @@
             this.toolStripEditar,
             this.toolStripEliminar});
             this.cmsDatos.Name = "contextMenuStrip1";
-            this.cmsDatos.Size = new System.Drawing.Size(147, 68);
-            // 
-            // dgvDatos
-            // 
-            this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatos.ContextMenuStrip = this.cmsDatos;
-            this.dgvDatos.Location = new System.Drawing.Point(549, 37);
-            this.dgvDatos.Name = "dgvDatos";
-            this.dgvDatos.RowHeadersWidth = 62;
-            this.dgvDatos.RowTemplate.Height = 28;
-            this.dgvDatos.Size = new System.Drawing.Size(1217, 734);
-            this.dgvDatos.TabIndex = 42;
+            this.cmsDatos.Size = new System.Drawing.Size(174, 80);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 459);
+            this.textBox1.Location = new System.Drawing.Point(29, 574);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(497, 26);
+            this.textBox1.Size = new System.Drawing.Size(661, 31);
             this.textBox1.TabIndex = 62;
+            // 
+            // dgvDatos
+            // 
+            this.dgvDatos.AllowUserToAddRows = false;
+            this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.ContextMenuStrip = this.cmsDatos;
+            this.dgvDatos.Location = new System.Drawing.Point(729, 64);
+            this.dgvDatos.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDatos.MultiSelect = false;
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.RowHeadersWidth = 62;
+            this.dgvDatos.RowTemplate.Height = 28;
+            this.dgvDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDatos.Size = new System.Drawing.Size(1727, 1168);
+            this.dgvDatos.TabIndex = 63;
             // 
             // frmDatosFacturas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1813, 784);
+            this.ClientSize = new System.Drawing.Size(2417, 980);
+            this.Controls.Add(this.dgvDatos);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.msMenu);
             this.Controls.Add(this.lbTitulo);
@@ -280,7 +300,7 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblId);
-            this.Controls.Add(this.dgvDatos);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmDatosFacturas";
             this.Text = "Facturas";
             this.Load += new System.EventHandler(this.frmDatosFacturas_Load);
@@ -317,7 +337,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripEliminar;
         private System.Windows.Forms.ToolStripMenuItem toolStripEditar;
         private System.Windows.Forms.ContextMenuStrip cmsDatos;
-        private System.Windows.Forms.DataGridView dgvDatos;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dgvDatos;
     }
 }

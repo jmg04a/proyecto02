@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtTipoDocumento = new System.Windows.Forms.TextBox();
-            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtFactura = new System.Windows.Forms.TextBox();
+            this.txtEmpleado = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,18 +42,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(348, 29);
+            this.label1.Location = new System.Drawing.Point(464, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 20);
+            this.label1.Size = new System.Drawing.Size(79, 25);
             this.label1.TabIndex = 35;
             this.label1.Text = "Ventas";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(460, 198);
+            this.button2.Location = new System.Drawing.Point(613, 248);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 51);
+            this.button2.Size = new System.Drawing.Size(136, 64);
             this.button2.TabIndex = 34;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
@@ -61,44 +63,49 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(206, 198);
+            this.button1.Location = new System.Drawing.Point(275, 248);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 51);
+            this.button1.Size = new System.Drawing.Size(136, 64);
             this.button1.TabIndex = 33;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtTipoDocumento
+            // txtFactura
             // 
-            this.txtTipoDocumento.Location = new System.Drawing.Point(410, 150);
-            this.txtTipoDocumento.Name = "txtTipoDocumento";
-            this.txtTipoDocumento.Size = new System.Drawing.Size(242, 26);
-            this.txtTipoDocumento.TabIndex = 27;
-            this.txtTipoDocumento.TextChanged += new System.EventHandler(this.txtTipoDocumento_TextChanged);
+            this.txtFactura.Location = new System.Drawing.Point(547, 188);
+            this.txtFactura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFactura.Name = "txtFactura";
+            this.txtFactura.Size = new System.Drawing.Size(321, 31);
+            this.txtFactura.TabIndex = 27;
+            this.txtFactura.TextChanged += new System.EventHandler(this.txtTipoDocumento_TextChanged);
             // 
-            // txtApellido
+            // txtEmpleado
             // 
-            this.txtApellido.Location = new System.Drawing.Point(410, 123);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(242, 26);
-            this.txtApellido.TabIndex = 26;
-            this.txtApellido.TextChanged += new System.EventHandler(this.txtApellido_TextChanged);
+            this.txtEmpleado.Location = new System.Drawing.Point(547, 154);
+            this.txtEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmpleado.Name = "txtEmpleado";
+            this.txtEmpleado.Size = new System.Drawing.Size(321, 31);
+            this.txtEmpleado.TabIndex = 26;
+            this.txtEmpleado.TextChanged += new System.EventHandler(this.txtApellido_TextChanged);
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(410, 88);
+            this.txtNombre.Location = new System.Drawing.Point(547, 110);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(242, 26);
+            this.txtNombre.Size = new System.Drawing.Size(321, 31);
             this.txtNombre.TabIndex = 25;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(148, 156);
+            this.label4.Location = new System.Drawing.Point(197, 195);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 20);
+            this.label4.Size = new System.Drawing.Size(108, 25);
             this.label4.TabIndex = 21;
             this.label4.Text = "Id Factura";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -106,9 +113,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(148, 126);
+            this.label3.Location = new System.Drawing.Point(197, 158);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 20);
+            this.label3.Size = new System.Drawing.Size(166, 25);
             this.label3.TabIndex = 20;
             this.label3.Text = "Id del Empleado";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -116,27 +124,29 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(148, 91);
+            this.label2.Location = new System.Drawing.Point(197, 114);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 20);
+            this.label2.Size = new System.Drawing.Size(35, 25);
             this.label2.TabIndex = 19;
             this.label2.Text = "Id ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // frmEditarVentas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 279);
+            this.ClientSize = new System.Drawing.Size(1067, 349);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtTipoDocumento);
-            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtFactura);
+            this.Controls.Add(this.txtEmpleado);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmEditarVentas";
             this.Text = "frmEditarVentas";
             this.ResumeLayout(false);
@@ -149,8 +159,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtTipoDocumento;
-        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtFactura;
+        private System.Windows.Forms.TextBox txtEmpleado;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

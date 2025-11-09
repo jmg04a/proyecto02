@@ -56,7 +56,6 @@
             this.toolStripEliminar = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripEditar = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsDatos = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.txtCuil = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCargo = new System.Windows.Forms.TextBox();
@@ -69,6 +68,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.msMenu.SuspendLayout();
             this.cmsDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
@@ -140,7 +140,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(19, 825);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(661, 31);
             this.txtEmail.TabIndex = 60;
@@ -158,7 +158,7 @@
             // txtNumeroTelefono2
             // 
             this.txtNumeroTelefono2.Location = new System.Drawing.Point(19, 752);
-            this.txtNumeroTelefono2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumeroTelefono2.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumeroTelefono2.Name = "txtNumeroTelefono2";
             this.txtNumeroTelefono2.Size = new System.Drawing.Size(661, 31);
             this.txtNumeroTelefono2.TabIndex = 58;
@@ -176,7 +176,7 @@
             // txtNumeroTelefono
             // 
             this.txtNumeroTelefono.Location = new System.Drawing.Point(16, 676);
-            this.txtNumeroTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumeroTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumeroTelefono.Name = "txtNumeroTelefono";
             this.txtNumeroTelefono.Size = new System.Drawing.Size(661, 31);
             this.txtNumeroTelefono.TabIndex = 56;
@@ -194,7 +194,7 @@
             // txtNumeroDocumento
             // 
             this.txtNumeroDocumento.Location = new System.Drawing.Point(16, 468);
-            this.txtNumeroDocumento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumeroDocumento.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumeroDocumento.Name = "txtNumeroDocumento";
             this.txtNumeroDocumento.Size = new System.Drawing.Size(661, 31);
             this.txtNumeroDocumento.TabIndex = 54;
@@ -212,7 +212,7 @@
             // txtTipoDocumento
             // 
             this.txtTipoDocumento.Location = new System.Drawing.Point(16, 382);
-            this.txtTipoDocumento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTipoDocumento.Margin = new System.Windows.Forms.Padding(4);
             this.txtTipoDocumento.Name = "txtTipoDocumento";
             this.txtTipoDocumento.Size = new System.Drawing.Size(661, 31);
             this.txtTipoDocumento.TabIndex = 52;
@@ -230,7 +230,7 @@
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(16, 302);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(661, 31);
             this.txtApellido.TabIndex = 50;
@@ -248,7 +248,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(16, 221);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(661, 31);
             this.txtNombre.TabIndex = 48;
@@ -266,7 +266,7 @@
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(16, 144);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(661, 31);
             this.txtId.TabIndex = 46;
@@ -274,7 +274,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Location = new System.Drawing.Point(19, 1185);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(663, 124);
             this.btnBuscar.TabIndex = 45;
@@ -315,23 +315,10 @@
             this.cmsDatos.Name = "contextMenuStrip1";
             this.cmsDatos.Size = new System.Drawing.Size(174, 80);
             // 
-            // dgvDatos
-            // 
-            this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatos.ContextMenuStrip = this.cmsDatos;
-            this.dgvDatos.Location = new System.Drawing.Point(709, 45);
-            this.dgvDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dgvDatos.Name = "dgvDatos";
-            this.dgvDatos.RowHeadersWidth = 62;
-            this.dgvDatos.RowTemplate.Height = 28;
-            this.dgvDatos.Size = new System.Drawing.Size(1623, 1175);
-            this.dgvDatos.TabIndex = 42;
-            // 
             // txtCuil
             // 
             this.txtCuil.Location = new System.Drawing.Point(16, 536);
-            this.txtCuil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCuil.Margin = new System.Windows.Forms.Padding(4);
             this.txtCuil.Name = "txtCuil";
             this.txtCuil.Size = new System.Drawing.Size(661, 31);
             this.txtCuil.TabIndex = 63;
@@ -349,7 +336,7 @@
             // txtCargo
             // 
             this.txtCargo.Location = new System.Drawing.Point(24, 908);
-            this.txtCargo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCargo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(661, 31);
             this.txtCargo.TabIndex = 65;
@@ -367,7 +354,7 @@
             // txtAntiguedad
             // 
             this.txtAntiguedad.Location = new System.Drawing.Point(19, 985);
-            this.txtAntiguedad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAntiguedad.Margin = new System.Windows.Forms.Padding(4);
             this.txtAntiguedad.Name = "txtAntiguedad";
             this.txtAntiguedad.Size = new System.Drawing.Size(661, 31);
             this.txtAntiguedad.TabIndex = 67;
@@ -385,7 +372,7 @@
             // txtSalarioAnual
             // 
             this.txtSalarioAnual.Location = new System.Drawing.Point(24, 1121);
-            this.txtSalarioAnual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSalarioAnual.Margin = new System.Windows.Forms.Padding(4);
             this.txtSalarioAnual.Name = "txtSalarioAnual";
             this.txtSalarioAnual.Size = new System.Drawing.Size(661, 31);
             this.txtSalarioAnual.TabIndex = 71;
@@ -403,7 +390,7 @@
             // txtFechaIngreso
             // 
             this.txtFechaIngreso.Location = new System.Drawing.Point(16, 1056);
-            this.txtFechaIngreso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFechaIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.txtFechaIngreso.Name = "txtFechaIngreso";
             this.txtFechaIngreso.Size = new System.Drawing.Size(661, 31);
             this.txtFechaIngreso.TabIndex = 69;
@@ -421,7 +408,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(24, 598);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(661, 31);
             this.txtDireccion.TabIndex = 73;
@@ -436,11 +423,28 @@
             this.label6.TabIndex = 72;
             this.label6.Text = "Direccion";
             // 
+            // dgvDatos
+            // 
+            this.dgvDatos.AllowUserToAddRows = false;
+            this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.ContextMenuStrip = this.cmsDatos;
+            this.dgvDatos.Location = new System.Drawing.Point(693, 60);
+            this.dgvDatos.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDatos.MultiSelect = false;
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.RowHeadersWidth = 62;
+            this.dgvDatos.RowTemplate.Height = 28;
+            this.dgvDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDatos.Size = new System.Drawing.Size(1727, 1168);
+            this.dgvDatos.TabIndex = 74;
+            // 
             // frmDatosEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2726, 1422);
+            this.Controls.Add(this.dgvDatos);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtSalarioAnual);
@@ -472,8 +476,7 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblId);
-            this.Controls.Add(this.dgvDatos);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDatosEmpleados";
             this.Text = "frmDatosEmpleados";
             this.Load += new System.EventHandler(this.frmDatosEmpleados_Load);
@@ -515,7 +518,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripEliminar;
         private System.Windows.Forms.ToolStripMenuItem toolStripEditar;
         private System.Windows.Forms.ContextMenuStrip cmsDatos;
-        private System.Windows.Forms.DataGridView dgvDatos;
         private System.Windows.Forms.TextBox txtCuil;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCargo;
@@ -528,5 +530,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dgvDatos;
     }
 }

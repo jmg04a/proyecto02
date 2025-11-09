@@ -65,15 +65,16 @@
             // cerrarToolStripMenuItem
             // 
             this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
-            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(98, 44);
+            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(98, 38);
             this.cerrarToolStripMenuItem.Text = "Cerrar";
+            this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
             // 
             // tsmConexion
             // 
             this.tsmConexion.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmPC});
             this.tsmConexion.Name = "tsmConexion";
-            this.tsmConexion.Size = new System.Drawing.Size(135, 44);
+            this.tsmConexion.Size = new System.Drawing.Size(135, 36);
             this.tsmConexion.Text = "Conexion";
             // 
             // tsmPC
@@ -85,14 +86,14 @@
             // tsmReiniciar
             // 
             this.tsmReiniciar.Name = "tsmReiniciar";
-            this.tsmReiniciar.Size = new System.Drawing.Size(123, 44);
+            this.tsmReiniciar.Size = new System.Drawing.Size(123, 36);
             this.tsmReiniciar.Text = "Reiniciar";
             this.tsmReiniciar.Click += new System.EventHandler(this.tsmReiniciar_Click);
             // 
             // tslAgregarForm
             // 
             this.tslAgregarForm.Name = "tslAgregarForm";
-            this.tslAgregarForm.Size = new System.Drawing.Size(226, 44);
+            this.tslAgregarForm.Size = new System.Drawing.Size(226, 36);
             this.tslAgregarForm.Text = "Agregar Elemento";
             this.tslAgregarForm.Click += new System.EventHandler(this.tslAgregarForm_Click);
             // 
@@ -108,7 +109,7 @@
             this.msMenu.Location = new System.Drawing.Point(0, 0);
             this.msMenu.Name = "msMenu";
             this.msMenu.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.msMenu.Size = new System.Drawing.Size(2391, 40);
+            this.msMenu.Size = new System.Drawing.Size(2391, 42);
             this.msMenu.TabIndex = 61;
             this.msMenu.Text = "menuStrip1";
             // 
@@ -125,7 +126,7 @@
             // txtDescripcionPago
             // 
             this.txtDescripcionPago.Location = new System.Drawing.Point(20, 790);
-            this.txtDescripcionPago.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcionPago.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcionPago.Name = "txtDescripcionPago";
             this.txtDescripcionPago.Size = new System.Drawing.Size(661, 31);
             this.txtDescripcionPago.TabIndex = 60;
@@ -143,7 +144,7 @@
             // txtMedioPago
             // 
             this.txtMedioPago.Location = new System.Drawing.Point(20, 701);
-            this.txtMedioPago.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMedioPago.Margin = new System.Windows.Forms.Padding(4);
             this.txtMedioPago.Name = "txtMedioPago";
             this.txtMedioPago.Size = new System.Drawing.Size(661, 31);
             this.txtMedioPago.TabIndex = 58;
@@ -161,7 +162,7 @@
             // txtIva
             // 
             this.txtIva.Location = new System.Drawing.Point(17, 625);
-            this.txtIva.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIva.Margin = new System.Windows.Forms.Padding(4);
             this.txtIva.Name = "txtIva";
             this.txtIva.Size = new System.Drawing.Size(661, 31);
             this.txtIva.TabIndex = 56;
@@ -179,7 +180,7 @@
             // txtCostoAsociado
             // 
             this.txtCostoAsociado.Location = new System.Drawing.Point(20, 532);
-            this.txtCostoAsociado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCostoAsociado.Margin = new System.Windows.Forms.Padding(4);
             this.txtCostoAsociado.Name = "txtCostoAsociado";
             this.txtCostoAsociado.Size = new System.Drawing.Size(661, 31);
             this.txtCostoAsociado.TabIndex = 54;
@@ -197,7 +198,7 @@
             // txtDescripcionFactura
             // 
             this.txtDescripcionFactura.Location = new System.Drawing.Point(20, 448);
-            this.txtDescripcionFactura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcionFactura.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcionFactura.Name = "txtDescripcionFactura";
             this.txtDescripcionFactura.Size = new System.Drawing.Size(661, 31);
             this.txtDescripcionFactura.TabIndex = 52;
@@ -215,7 +216,7 @@
             // txtTipo
             // 
             this.txtTipo.Location = new System.Drawing.Point(20, 368);
-            this.txtTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(661, 31);
             this.txtTipo.TabIndex = 50;
@@ -233,7 +234,7 @@
             // txtIdFactura
             // 
             this.txtIdFactura.Location = new System.Drawing.Point(20, 286);
-            this.txtIdFactura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdFactura.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdFactura.Name = "txtIdFactura";
             this.txtIdFactura.Size = new System.Drawing.Size(661, 31);
             this.txtIdFactura.TabIndex = 48;
@@ -251,7 +252,7 @@
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(20, 209);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(661, 31);
             this.txtId.TabIndex = 46;
@@ -259,7 +260,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Location = new System.Drawing.Point(20, 882);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(663, 124);
             this.btnBuscar.TabIndex = 45;
@@ -280,14 +281,14 @@
             // toolStripEliminar
             // 
             this.toolStripEliminar.Name = "toolStripEliminar";
-            this.toolStripEliminar.Size = new System.Drawing.Size(300, 38);
+            this.toolStripEliminar.Size = new System.Drawing.Size(173, 38);
             this.toolStripEliminar.Text = "Eliminar";
             this.toolStripEliminar.Click += new System.EventHandler(this.toolStripEliminar_Click);
             // 
             // toolStripEditar
             // 
             this.toolStripEditar.Name = "toolStripEditar";
-            this.toolStripEditar.Size = new System.Drawing.Size(300, 38);
+            this.toolStripEditar.Size = new System.Drawing.Size(173, 38);
             this.toolStripEditar.Text = "Editar";
             this.toolStripEditar.Click += new System.EventHandler(this.toolStripEditar_Click);
             // 
@@ -298,26 +299,30 @@
             this.toolStripEditar,
             this.toolStripEliminar});
             this.cmsDatos.Name = "contextMenuStrip1";
-            this.cmsDatos.Size = new System.Drawing.Size(301, 124);
+            this.cmsDatos.Size = new System.Drawing.Size(174, 80);
             // 
             // dgvDatos
             // 
+            this.dgvDatos.AllowUserToAddRows = false;
             this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDatos.ContextMenuStrip = this.cmsDatos;
-            this.dgvDatos.Location = new System.Drawing.Point(752, 102);
-            this.dgvDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvDatos.Location = new System.Drawing.Point(704, 77);
+            this.dgvDatos.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDatos.MultiSelect = false;
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.RowHeadersWidth = 62;
             this.dgvDatos.RowTemplate.Height = 28;
-            this.dgvDatos.Size = new System.Drawing.Size(1623, 918);
-            this.dgvDatos.TabIndex = 42;
+            this.dgvDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDatos.Size = new System.Drawing.Size(1727, 1168);
+            this.dgvDatos.TabIndex = 62;
             // 
             // frmDatosFacturasDetalles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2391, 1035);
+            this.Controls.Add(this.dgvDatos);
             this.Controls.Add(this.msMenu);
             this.Controls.Add(this.lbTitulo);
             this.Controls.Add(this.txtDescripcionPago);
@@ -337,8 +342,7 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblId);
-            this.Controls.Add(this.dgvDatos);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDatosFacturasDetalles";
             this.Text = "frmDatosFacturasDetalles";
             this.Load += new System.EventHandler(this.frmDatosFacturasDetalles_Load);

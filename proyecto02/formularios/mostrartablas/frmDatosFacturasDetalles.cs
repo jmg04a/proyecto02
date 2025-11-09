@@ -230,5 +230,10 @@ namespace proyecto02.formularios.mostrartablas
             frmEditarFacturasDetalles frm = new frmEditarFacturasDetalles(Convert.ToInt32(r));
             frm.ShowDialog();
         }
+
+        private void cerrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -31,28 +31,29 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtGrupo = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtTelefono2 = new System.Windows.Forms.TextBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.txtNroDocumento = new System.Windows.Forms.TextBox();
-            this.txtTipoDocumento = new System.Windows.Forms.TextBox();
-            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtTipo = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.txtIdProveedor = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtStock = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtPeso = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtImagen = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +70,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(627, 1039);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 64);
             this.button2.TabIndex = 34;
@@ -80,20 +81,20 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(288, 1039);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 64);
             this.button1.TabIndex = 33;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // txtEmail
+            // txtGrupo
             // 
-            this.txtEmail.Location = new System.Drawing.Point(547, 359);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(321, 31);
-            this.txtEmail.TabIndex = 32;
+            this.txtGrupo.Location = new System.Drawing.Point(547, 359);
+            this.txtGrupo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGrupo.Name = "txtGrupo";
+            this.txtGrupo.Size = new System.Drawing.Size(321, 31);
+            this.txtGrupo.TabIndex = 32;
             // 
             // label8
             // 
@@ -105,45 +106,45 @@
             this.label8.TabIndex = 31;
             this.label8.Text = "Grupo";
             // 
-            // txtTelefono2
+            // txtTipo
             // 
-            this.txtTelefono2.Location = new System.Drawing.Point(547, 319);
-            this.txtTelefono2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtTelefono2.Name = "txtTelefono2";
-            this.txtTelefono2.Size = new System.Drawing.Size(321, 31);
-            this.txtTelefono2.TabIndex = 30;
+            this.txtTipo.Location = new System.Drawing.Point(547, 319);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Size = new System.Drawing.Size(321, 31);
+            this.txtTipo.TabIndex = 30;
             // 
-            // txtTelefono
+            // txtMarca
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(547, 275);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(321, 31);
-            this.txtTelefono.TabIndex = 29;
+            this.txtMarca.Location = new System.Drawing.Point(547, 275);
+            this.txtMarca.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(321, 31);
+            this.txtMarca.TabIndex = 29;
             // 
-            // txtNroDocumento
+            // txtNombre
             // 
-            this.txtNroDocumento.Location = new System.Drawing.Point(547, 231);
-            this.txtNroDocumento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtNroDocumento.Name = "txtNroDocumento";
-            this.txtNroDocumento.Size = new System.Drawing.Size(321, 31);
-            this.txtNroDocumento.TabIndex = 28;
+            this.txtNombre.Location = new System.Drawing.Point(547, 231);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(321, 31);
+            this.txtNombre.TabIndex = 28;
             // 
-            // txtTipoDocumento
+            // txtCodigo
             // 
-            this.txtTipoDocumento.Location = new System.Drawing.Point(547, 188);
-            this.txtTipoDocumento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtTipoDocumento.Name = "txtTipoDocumento";
-            this.txtTipoDocumento.Size = new System.Drawing.Size(321, 31);
-            this.txtTipoDocumento.TabIndex = 27;
+            this.txtCodigo.Location = new System.Drawing.Point(547, 188);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(321, 31);
+            this.txtCodigo.TabIndex = 27;
             // 
-            // txtApellido
+            // txtIdProveedor
             // 
-            this.txtApellido.Location = new System.Drawing.Point(547, 154);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(321, 31);
-            this.txtApellido.TabIndex = 26;
+            this.txtIdProveedor.Location = new System.Drawing.Point(547, 154);
+            this.txtIdProveedor.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdProveedor.Name = "txtIdProveedor";
+            this.txtIdProveedor.Size = new System.Drawing.Size(321, 31);
+            this.txtIdProveedor.TabIndex = 26;
             // 
             // label7
             // 
@@ -195,13 +196,13 @@
             this.label3.TabIndex = 20;
             this.label3.Text = "Id Proveedor";
             // 
-            // textBox1
+            // txtStock
             // 
-            this.textBox1.Location = new System.Drawing.Point(547, 489);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(321, 31);
-            this.textBox1.TabIndex = 41;
+            this.txtStock.Location = new System.Drawing.Point(547, 489);
+            this.txtStock.Margin = new System.Windows.Forms.Padding(4);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(321, 31);
+            this.txtStock.TabIndex = 41;
             // 
             // label9
             // 
@@ -213,21 +214,21 @@
             this.label9.TabIndex = 40;
             this.label9.Text = "Stock";
             // 
-            // textBox2
+            // txtPrecio
             // 
-            this.textBox2.Location = new System.Drawing.Point(547, 449);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(321, 31);
-            this.textBox2.TabIndex = 39;
+            this.txtPrecio.Location = new System.Drawing.Point(547, 449);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(321, 31);
+            this.txtPrecio.TabIndex = 39;
             // 
-            // textBox3
+            // txtPeso
             // 
-            this.textBox3.Location = new System.Drawing.Point(547, 405);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(321, 31);
-            this.textBox3.TabIndex = 38;
+            this.txtPeso.Location = new System.Drawing.Point(547, 405);
+            this.txtPeso.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPeso.Name = "txtPeso";
+            this.txtPeso.Size = new System.Drawing.Size(321, 31);
+            this.txtPeso.TabIndex = 38;
             // 
             // label10
             // 
@@ -262,19 +263,21 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(320, 694);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(396, 318);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 43;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox4
+            // txtImagen
             // 
-            this.textBox4.Location = new System.Drawing.Point(548, 578);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(321, 31);
-            this.textBox4.TabIndex = 45;
+            this.txtImagen.Location = new System.Drawing.Point(548, 578);
+            this.txtImagen.Margin = new System.Windows.Forms.Padding(4);
+            this.txtImagen.Name = "txtImagen";
+            this.txtImagen.Size = new System.Drawing.Size(321, 31);
+            this.txtImagen.TabIndex = 45;
+            this.txtImagen.TextChanged += new System.EventHandler(this.txtImagen_TextChanged);
             // 
             // label2
             // 
@@ -286,37 +289,48 @@
             this.label2.TabIndex = 44;
             this.label2.Text = "Link de Imagen:";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(876, 560);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(111, 61);
+            this.button3.TabIndex = 46;
+            this.button3.Text = "Cargar Preview";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // frmEditorProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 1186);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.txtImagen);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtStock);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtPrecio);
+            this.Controls.Add(this.txtPeso);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtGrupo);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtTelefono2);
-            this.Controls.Add(this.txtTelefono);
-            this.Controls.Add(this.txtNroDocumento);
-            this.Controls.Add(this.txtTipoDocumento);
-            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtTipo);
+            this.Controls.Add(this.txtMarca);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.txtIdProveedor);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEditorProductos";
             this.Text = "Id Proveedor";
             this.Load += new System.EventHandler(this.frmEditorProductos_Load);
@@ -331,27 +345,28 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtGrupo;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtTelefono2;
-        private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.TextBox txtNroDocumento;
-        private System.Windows.Forms.TextBox txtTipoDocumento;
-        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtTipo;
+        private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox txtIdProveedor;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtImagen;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button3;
     }
 }

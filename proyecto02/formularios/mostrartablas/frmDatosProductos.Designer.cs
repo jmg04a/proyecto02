@@ -54,13 +54,16 @@
             this.toolStripEliminar = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripEditar = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsDatos = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPeso = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.msMenu.SuspendLayout();
             this.cmsDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,7 +123,7 @@
             // lbTitulo
             // 
             this.lbTitulo.AutoSize = true;
-            this.lbTitulo.Location = new System.Drawing.Point(19, 99);
+            this.lbTitulo.Location = new System.Drawing.Point(26, 277);
             this.lbTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTitulo.Name = "lbTitulo";
             this.lbTitulo.Size = new System.Drawing.Size(91, 25);
@@ -129,7 +132,7 @@
             // 
             // txtGrupo
             // 
-            this.txtGrupo.Location = new System.Drawing.Point(24, 690);
+            this.txtGrupo.Location = new System.Drawing.Point(31, 868);
             this.txtGrupo.Margin = new System.Windows.Forms.Padding(4);
             this.txtGrupo.Name = "txtGrupo";
             this.txtGrupo.Size = new System.Drawing.Size(661, 31);
@@ -138,7 +141,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(18, 661);
+            this.lblEmail.Location = new System.Drawing.Point(25, 839);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(71, 25);
@@ -147,7 +150,7 @@
             // 
             // txtTipo
             // 
-            this.txtTipo.Location = new System.Drawing.Point(24, 601);
+            this.txtTipo.Location = new System.Drawing.Point(31, 779);
             this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(661, 31);
@@ -156,7 +159,7 @@
             // lblNroTel2
             // 
             this.lblNroTel2.AutoSize = true;
-            this.lblNroTel2.Location = new System.Drawing.Point(18, 572);
+            this.lblNroTel2.Location = new System.Drawing.Point(25, 750);
             this.lblNroTel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroTel2.Name = "lblNroTel2";
             this.lblNroTel2.Size = new System.Drawing.Size(54, 25);
@@ -165,7 +168,7 @@
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(21, 525);
+            this.txtMarca.Location = new System.Drawing.Point(28, 703);
             this.txtMarca.Margin = new System.Windows.Forms.Padding(4);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(661, 31);
@@ -174,7 +177,7 @@
             // lblNroTel
             // 
             this.lblNroTel.AutoSize = true;
-            this.lblNroTel.Location = new System.Drawing.Point(18, 482);
+            this.lblNroTel.Location = new System.Drawing.Point(25, 660);
             this.lblNroTel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroTel.Name = "lblNroTel";
             this.lblNroTel.Size = new System.Drawing.Size(72, 25);
@@ -183,7 +186,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(24, 432);
+            this.txtNombre.Location = new System.Drawing.Point(31, 610);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(661, 31);
@@ -192,7 +195,7 @@
             // lblNroDoc
             // 
             this.lblNroDoc.AutoSize = true;
-            this.lblNroDoc.Location = new System.Drawing.Point(18, 404);
+            this.lblNroDoc.Location = new System.Drawing.Point(25, 582);
             this.lblNroDoc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroDoc.Name = "lblNroDoc";
             this.lblNroDoc.Size = new System.Drawing.Size(87, 25);
@@ -201,7 +204,7 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(27, 351);
+            this.txtCodigo.Location = new System.Drawing.Point(34, 529);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(661, 31);
@@ -210,7 +213,7 @@
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(21, 322);
+            this.lblApellido.Location = new System.Drawing.Point(28, 500);
             this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(80, 25);
@@ -219,7 +222,7 @@
             // 
             // txtIdProveedor
             // 
-            this.txtIdProveedor.Location = new System.Drawing.Point(27, 270);
+            this.txtIdProveedor.Location = new System.Drawing.Point(34, 448);
             this.txtIdProveedor.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdProveedor.Name = "txtIdProveedor";
             this.txtIdProveedor.Size = new System.Drawing.Size(661, 31);
@@ -228,7 +231,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(21, 241);
+            this.lblNombre.Location = new System.Drawing.Point(28, 419);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(162, 25);
@@ -237,7 +240,7 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(27, 192);
+            this.txtId.Location = new System.Drawing.Point(34, 370);
             this.txtId.Margin = new System.Windows.Forms.Padding(4);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(661, 31);
@@ -245,7 +248,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(19, 948);
+            this.btnBuscar.Location = new System.Drawing.Point(26, 1126);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(663, 124);
@@ -257,7 +260,7 @@
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(21, 164);
+            this.lblId.Location = new System.Drawing.Point(29, 318);
             this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(29, 25);
@@ -269,12 +272,14 @@
             this.toolStripEliminar.Name = "toolStripEliminar";
             this.toolStripEliminar.Size = new System.Drawing.Size(173, 38);
             this.toolStripEliminar.Text = "Eliminar";
+            this.toolStripEliminar.Click += new System.EventHandler(this.toolStripEliminar_Click);
             // 
             // toolStripEditar
             // 
             this.toolStripEditar.Name = "toolStripEditar";
             this.toolStripEditar.Size = new System.Drawing.Size(173, 38);
             this.toolStripEditar.Text = "Editar";
+            this.toolStripEditar.Click += new System.EventHandler(this.toolStripEditar_Click);
             // 
             // cmsDatos
             // 
@@ -285,22 +290,9 @@
             this.cmsDatos.Name = "contextMenuStrip1";
             this.cmsDatos.Size = new System.Drawing.Size(174, 80);
             // 
-            // dgvDatos
-            // 
-            this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatos.ContextMenuStrip = this.cmsDatos;
-            this.dgvDatos.Location = new System.Drawing.Point(725, 66);
-            this.dgvDatos.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvDatos.Name = "dgvDatos";
-            this.dgvDatos.RowHeadersWidth = 62;
-            this.dgvDatos.RowTemplate.Height = 28;
-            this.dgvDatos.Size = new System.Drawing.Size(1623, 1034);
-            this.dgvDatos.TabIndex = 42;
-            // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(24, 864);
+            this.txtStock.Location = new System.Drawing.Point(31, 1042);
             this.txtStock.Margin = new System.Windows.Forms.Padding(4);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(661, 31);
@@ -309,7 +301,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 835);
+            this.label1.Location = new System.Drawing.Point(25, 1013);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 25);
@@ -318,7 +310,7 @@
             // 
             // txtPeso
             // 
-            this.txtPeso.Location = new System.Drawing.Point(24, 775);
+            this.txtPeso.Location = new System.Drawing.Point(31, 953);
             this.txtPeso.Margin = new System.Windows.Forms.Padding(4);
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.Size = new System.Drawing.Size(661, 31);
@@ -327,18 +319,56 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 746);
+            this.label2.Location = new System.Drawing.Point(25, 924);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 25);
             this.label2.TabIndex = 62;
             this.label2.Text = "Precio unidad";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(350, 63);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(323, 280);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 66;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(163, 102);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(160, 25);
+            this.label3.TabIndex = 67;
+            this.label3.Text = "Previsualizador";
+            // 
+            // dgvDatos
+            // 
+            this.dgvDatos.AllowUserToAddRows = false;
+            this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.ContextMenuStrip = this.cmsDatos;
+            this.dgvDatos.Location = new System.Drawing.Point(733, 63);
+            this.dgvDatos.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDatos.MultiSelect = false;
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.RowHeadersWidth = 62;
+            this.dgvDatos.RowTemplate.Height = 28;
+            this.dgvDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDatos.Size = new System.Drawing.Size(1727, 1168);
+            this.dgvDatos.TabIndex = 68;
+            // 
             // frmDatosProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2509, 1300);
+            this.Controls.Add(this.dgvDatos);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtStock);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPeso);
@@ -360,7 +390,6 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblId);
-            this.Controls.Add(this.dgvDatos);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDatosProductos";
             this.Text = "frmDatosProductos";
@@ -368,6 +397,7 @@
             this.msMenu.ResumeLayout(false);
             this.msMenu.PerformLayout();
             this.cmsDatos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -401,10 +431,12 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripEliminar;
         private System.Windows.Forms.ToolStripMenuItem toolStripEditar;
         private System.Windows.Forms.ContextMenuStrip cmsDatos;
-        private System.Windows.Forms.DataGridView dgvDatos;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dgvDatos;
     }
 }

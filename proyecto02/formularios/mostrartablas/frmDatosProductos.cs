@@ -1,14 +1,17 @@
-﻿using Octubre.Data;
+﻿using ImageMagick;
+using Octubre.Data;
+using Proyecto2;
+using Proyecto2.formularios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Proyecto2.formularios;
 
 namespace proyecto02.formularios.mostrartablas
 {
@@ -25,7 +28,8 @@ namespace proyecto02.formularios.mostrartablas
                               "grupo AS \"Grupo\", " +
                               "peso AS \"Peso\", " +
                               "precio_unidad AS \"Precio Unitario\", " +
-                              "stock AS \"Stock\" " +
+                              "stock AS \"Stock\", " +
+                              "imagen AS \"Link de Imagen\" "+
                               "FROM productos";
         public frmDatosProductos()
         {
@@ -109,10 +113,10 @@ namespace proyecto02.formularios.mostrartablas
             }
 
             // --- Nombre (varchar) ---
-            if (!string.IsNullOrWhiteSpace(txtIdProveedor.Text))
+            if (!string.IsNullOrWhiteSpace(txtNombre.Text))
             {
                 if (variasOpciones) { buscarQuery += " AND "; }
-                buscarQuery += " nombre LIKE '%" + txtIdProveedor.Text + "%'"; // ¡Inseguro!
+                buscarQuery += " nombre LIKE '%" + txtNombre.Text + "%'"; // ¡Inseguro!
                 variasOpciones = true;
             }
 
@@ -202,6 +206,100 @@ namespace proyecto02.formularios.mostrartablas
         {
             frmEditorProductos frm =new frmEditorProductos();
             frm.ShowDialog();
+        }
+
+        private void toolStripEditar_Click(object sender, EventArgs e)
+        {
+            string r = dgvDatos[0, dgvDatos.CurrentCell.RowIndex].Value.ToString();
+            frmEditorProductos frm = new frmEditorProductos(Convert.ToInt32(r));
+            frm.ShowDialog();
+        }
+
+        private void toolStripEliminar_Click(object sender, EventArgs e)
+        {
+            string r = dgvDatos[0,
+                dgvDatos.CurrentCell.RowIndex].Value.ToString();
+            if (MessageBox.Show("Deseas Eliminar el Registro", "Sistema",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                bool s = datos.ExecuteQuery("DELETE FROM productos WHERE id=" + r);
+                if (s)
+                {
+                    MessageBox.Show("Registro Eliminado", "Sistema",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    mostrarDatos(defaultQuery);
+                }
+                else
+                {
+                    MessageBox.Show("Error al Eliminar el Registro", "Sistema",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void dgvDatos_Scroll(object sender, ScrollEventArgs e)
+        {
+
+        }
+
+        private async void dgvDatos_SelectionChanged(object sender, EventArgs e)
+        {
+            // 1. Inicia el 'try' ANTES de tocar cualquier fila.
+            try
+            {
+                // 2. Tu 'if' original. Es correcto.
+                if (dgvDatos.SelectedRows.Count > 0)
+                {
+                    // 3. El posible punto de fallo.
+                    DataGridViewRow filaSeleccionada = dgvDatos.SelectedRows[0];
+
+                    // 4. El segundo posible punto de fallo.
+                    if (filaSeleccionada.IsNewRow)
+                    {
+                        // Si es la fila nueva, limpia y sal.
+                        pictureBox1.Image?.Dispose();
+                        pictureBox1.Image = null;
+                        return;
+                    }
+
+                    // 5. El tercer posible punto de fallo (si la celda no existe)
+                    string urlImagen = filaSeleccionada.Cells["Link de Imagen"].Value?.ToString();
+
+                    // --- El resto de tu lógica de carga ---
+
+                    if (string.IsNullOrWhiteSpace(urlImagen))
+                    {
+                        pictureBox1.Image?.Dispose();
+                        pictureBox1.Image = null;
+                        return;
+                    }
+
+                    using (HttpClient cliente = new HttpClient())
+                    {
+                        byte[] bytesImagen = await cliente.GetByteArrayAsync(urlImagen);
+
+                        using (var image = new MagickImage(bytesImagen))
+                        {
+                            pictureBox1.Image?.Dispose();
+                            pictureBox1.Image = image.ToBitmap();
+                        }
+                    }
+                    // (Tu propio 'catch' para la carga de imagen debería ir aquí dentro)
+                }
+            }
+            // 6. EL 'CATCH' GENERAL
+            catch (Exception ex)
+            {
+                // Si el evento se disparó al limpiar el grid,
+                // simplemente ignoramos el error.
+
+                // Opcional: Muestra el error si estás depurando
+                // MessageBox.Show("Error de selección: " + ex.Message);
+
+                // Lo más seguro es simplemente limpiar la imagen
+                pictureBox1.Image?.Dispose();
+                pictureBox1.Image = null;
+            }
         }
     }
 }
